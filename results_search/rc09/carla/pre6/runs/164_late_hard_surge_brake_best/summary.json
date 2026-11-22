@@ -1,0 +1,352 @@
+{
+ "run_id": "164_late_hard_surge_brake_best",
+ "rc": "RC09-01",
+ "label": "FAIL",
+ "reason": "contact: front impact with queue0, front impact with queue0 (footprint overlap), rear-end by truck, rear-end by truck",
+ "end_reason": "contact",
+ "scenario": {
+  "rc": "RC09-01",
+  "map": "Town04",
+  "road": 40,
+  "lane": -3,
+  "s0": 2.0,
+  "ego_s": 70.0,
+  "v_ego": 8.0,
+  "front_gap": 24.0,
+  "queue_n": 3,
+  "rear_gap": 18.0,
+  "closing": 5.5,
+  "rear_delay_s": 1.8,
+  "rear_decel": 5.0,
+  "preroll_s": 6.0,
+  "duration_s": 16.0,
+  "ego_bp": "vehicle.tesla.model3",
+  "queue_bps": [
+   "vehicle.audi.a2",
+   "vehicle.toyota.prius",
+   "vehicle.nissan.micra"
+  ],
+  "rear_bp": "vehicle.carlamotors.carlacola",
+  "wall_bps": [
+   "static.prop.container"
+  ],
+  "wall_levels": 2,
+  "wall_min_inner_half": 2.0,
+  "wall_margin": 0.45,
+  "min_clear": 1.0,
+  "speed_tol": 0.5,
+  "gap_tol": 1.5,
+  "closing_tol": 0.5,
+  "wall_tol": 0.05
+ },
+ "policy": {
+  "name": "profile_policy",
+  "version": "rc09-prof-v1",
+  "params": {
+   "v_target": 8.0,
+   "a0": 1.9965628723951896,
+   "d0": 1.1300589629503694,
+   "a1": 3.9076690253722046,
+   "t1": 99.0,
+   "a2": 3.9076690253722046
+  }
+ },
+ "calibration": {
+  "brake_cmd": [
+   0.0,
+   0.04,
+   0.08,
+   0.12,
+   0.16,
+   0.2,
+   0.3,
+   0.5,
+   0.7
+  ],
+  "brake_decel": [
+   1.4681581698771817,
+   1.898512206190604,
+   2.297134229323057,
+   2.686514417272724,
+   3.0642399873928747,
+   3.413883802585106,
+   4.327744269657114,
+   6.040437350819882,
+   7.6174306539801835
+  ],
+  "brake_cap": 0.7,
+  "coast_decel": 1.4681581698771817,
+  "brake_delay_s": 0.05,
+  "cruise_throttle": 0.3121495375623404,
+  "max_decel": 7.6174306539801835
+ },
+ "metrics": {
+  "cue": {
+   "speed": 8.00292164798981,
+   "front_gap": 24.015942390639864,
+   "rear_gap": 17.717034574163407,
+   "closing_speed": 5.395340976129225
+  },
+  "min_front_gap": -0.17343127580485884,
+  "min_rear_gap": -0.07142865194208525,
+  "final_front_gap": -0.15467170852915046,
+  "final_rear_gap": -0.07142865194208525,
+  "ego_stopped": true,
+  "rear_trigger_to_brake_delay_s": 1.9000000283122063,
+  "max_filtered_accel": {
+   "forward": 5.085578484018912,
+   "brake": 9.385053561605234,
+   "lateral": 1.360622512433228,
+   "planar": 9.38506331800591
+  },
+  "min_wall_clearance": 0.5924713513039817,
+  "ego_brake_start": 1.1500000171363354
+ },
+ "times": {
+  "cue": 384.0954461880028,
+  "ego_brake": 1.1500000171363354,
+  "rear_brake": 385.99544621631503
+ },
+ "contact": {
+  "frames": [
+   8287,
+   8288,
+   8289,
+   8290,
+   8291,
+   8292,
+   8293,
+   8294,
+   8295,
+   8296,
+   8297,
+   8298,
+   8299,
+   8300,
+   8301,
+   8302,
+   8303,
+   8304,
+   8305,
+   8306,
+   8307
+  ],
+  "actors": [
+   "queue0",
+   "queue0 (footprint overlap)",
+   "rear_truck",
+   "rear_truck (footprint overlap)"
+  ]
+ },
+ "evidence_meta": {
+  "frames_contiguous": true,
+  "collision_sensor_ok": true,
+  "video_frames_match": true,
+  "walls": 328,
+  "wall_prop": "static.prop.container",
+  "tunnel_exits_blocked": true,
+  "tunnel": {
+   "prop": "static.prop.container",
+   "inner_half": 2.0,
+   "span": [
+    7.400271892547607,
+    164.84815773963925
+   ],
+   "levels": 2,
+   "count": 328,
+   "prop_ext": [
+    1.9318259565641913,
+    1.0176030395444187,
+    1.7142443656921387
+   ],
+   "yaw_offset": 0.0,
+   "measured_left_walls": 164,
+   "measured_right_walls": 164,
+   "left_face": -1.999991939454802,
+   "right_face": 1.99999311227991
+  }
+ },
+ "schema": "rcx-run-1",
+ "scene_seed": 7,
+ "files": [
+  "summary.json",
+  "ego_observable.csv.gz",
+  "ground_truth.csv.gz",
+  "decisions.jsonl.gz"
+ ],
+ "rc_case": "rc09",
+ "variation_id": "late_hard",
+ "candidate_kind": "best",
+ "family": "surge_brake",
+ "scenario_params": {
+  "closing": 5.5,
+  "front_gap": 24.0,
+  "rear_delay_s": 1.8,
+  "preroll_s": 6.0
+ },
+ "policy_params": {
+  "t1": 99.0,
+  "a0": 1.9965628723951896,
+  "d0": 1.1300589629503694,
+  "a1": 3.9076690253722046
+ },
+ "policy_source": {
+  "optimizer": "icem",
+  "seed": 1,
+  "pop": 48,
+  "iters": 8,
+  "robust_cost": 1145.6671842070218
+ },
+ "surrogate_prediction": {
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "min_front": -0.016137549534790407,
+  "min_rear": 1.7473875495347828
+ },
+ "request": "R7",
+ "src_batch": "presets_r2",
+ "contact_detail": {
+  "frame": 8287,
+  "time_s": 387.5954462401569,
+  "t_since_cue_s": 3.500000052154064,
+  "actor": "queue0",
+  "source": "footprint",
+  "rel_speed_mps": 1.711682072111837,
+  "normal_impulse_Ns": null,
+  "n_contact_frames": 21
+ },
+ "tunnel": {
+  "prop": "static.prop.container",
+  "inner_half": 2.0,
+  "span": [
+   7.400271892547607,
+   164.84815773963925
+  ],
+  "levels": 2,
+  "count": 328,
+  "prop_ext": [
+   1.9318259565641913,
+   1.0176030395444187,
+   1.7142443656921387
+  ],
+  "yaw_offset": 0.0,
+  "measured_left_walls": 164,
+  "measured_right_walls": 164,
+  "left_face": -1.999991939454802,
+  "right_face": 1.99999311227991
+ },
+ "scene_name": "tunnel_squeeze",
+ "hidden_settings": [
+  "rear_delay_s",
+  "rear_decel"
+ ],
+ "constraints": [
+  {
+   "name": "no_contact",
+   "kind": "contact",
+   "measured": 21.0,
+   "required": 0.0,
+   "op": "==",
+   "unit": "frames",
+   "passed": false
+  },
+  {
+   "name": "clearance_front",
+   "kind": "clearance",
+   "measured": -0.17343127580485884,
+   "required": 1.0,
+   "op": ">=",
+   "unit": "m",
+   "passed": false
+  },
+  {
+   "name": "clearance_rear",
+   "kind": "clearance",
+   "measured": -0.07142865194208525,
+   "required": 1.0,
+   "op": ">=",
+   "unit": "m",
+   "passed": false
+  },
+  {
+   "name": "ego_stopped",
+   "kind": "state",
+   "measured": true,
+   "required": true,
+   "op": "==",
+   "unit": "bool",
+   "passed": true
+  },
+  {
+   "name": "envelope_forward_accel",
+   "kind": "limit",
+   "measured": 5.085578484018912,
+   "required": 4.905,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": false
+  },
+  {
+   "name": "envelope_braking",
+   "kind": "limit",
+   "measured": 9.385053561605234,
+   "required": 9.81,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": true
+  },
+  {
+   "name": "envelope_lateral_accel",
+   "kind": "limit",
+   "measured": 1.360622512433228,
+   "required": 9.81,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": true
+  },
+  {
+   "name": "envelope_planar_accel",
+   "kind": "limit",
+   "measured": 9.38506331800591,
+   "required": 9.81,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": true
+  }
+ ],
+ "constraints_pass": false,
+ "first_violated_constraint": {
+  "name": "no_contact",
+  "time_s": 387.5954462401569,
+  "t_since_cue_s": 3.500000052154064,
+  "dated": true
+ },
+ "scene": {
+  "name": "tunnel_squeeze",
+  "uid": null,
+  "site": null,
+  "split": null,
+  "history_id": "h5eb5681d9a",
+  "hidden_world": "{\"rear_delay_s\": 1.8}",
+  "hidden_params": [
+   "rear_delay_s",
+   "rear_decel"
+  ]
+ },
+ "history_s": 5.0,
+ "short_history": false,
+ "units": {
+  "angle": "deg",
+  "angular_rate": "rad/s",
+  "length": "m",
+  "speed": "m/s",
+  "acceleration": "m/s^2",
+  "time": "s",
+  "frame": "s forward, t positive to the right, yaw positive nose to the right",
+  "sim_time_origin": "CARLA clock",
+  "angle_converted_from_rad": []
+ },
+ "pass_rule_id": "victor-v1",
+ "pass_rule": "all constraints passed; thresholds are the raw limits in `constraints` (clearance 0.5 m, ...)",
+ "unified": "unify-2"
+}
