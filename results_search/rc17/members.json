@@ -1,0 +1,1156 @@
+{
+ "definition": "RC17 (built variant): the RC01 scene with the ego's observation delayed by delay_s (docs/scenes/20RCs.md, RC01 and RC17). The planned RC16 + lag version is not built.",
+ "rule": "rc01 runs, grouped by delay_s; a contrast = the same scene and policy that passes at a short delay and fails at a longer one",
+ "delays": {
+  "0.0": {
+   "PASS": 125,
+   "FAIL": 52
+  },
+  "0.15": {
+   "PASS": 9
+  },
+  "0.2": {
+   "PASS": 7
+  },
+  "0.3": {
+   "PASS": 46,
+   "FAIL": 9
+  },
+  "0.4": {
+   "FAIL": 6,
+   "PASS": 3
+  },
+  "0.45": {
+   "FAIL": 2,
+   "PASS": 7
+  },
+  "0.5": {
+   "FAIL": 3,
+   "PASS": 1
+  },
+  "0.55": {
+   "FAIL": 3,
+   "PASS": 1
+  },
+  "0.575": {
+   "PASS": 1,
+   "FAIL": 3
+  },
+  "0.6": {
+   "PASS": 29,
+   "FAIL": 11
+  },
+  "0.75": {
+   "FAIL": 5,
+   "PASS": 4
+  },
+  "0.8": {
+   "PASS": 2,
+   "FAIL": 4
+  },
+  "0.825": {
+   "FAIL": 3,
+   "PASS": 2
+  },
+  "0.85": {
+   "PASS": 8,
+   "FAIL": 3
+  },
+  "0.9": {
+   "FAIL": 13,
+   "PASS": 1
+  },
+  "1.0": {
+   "FAIL": 5
+  }
+ },
+ "contrasts": [
+  {
+   "scene": {
+    "gap": 18.0,
+    "v_ego": 8.1
+   },
+   "family": "brake",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 5.978474320278684,
+    "d0": 0.318002504425445,
+    "t1": 99.0
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "042_g18_d0.0_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/042_g18_d0.0_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.15": {
+     "run_id": "045_g18_d0.15_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/045_g18_d0.15_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.3": {
+     "run_id": "048_g18_d0.3_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/048_g18_d0.3_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.45": {
+     "run_id": "051_g18_d0.45_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/051_g18_d0.45_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.6": {
+     "run_id": "054_g18_d0.6_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/054_g18_d0.6_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.75": {
+     "run_id": "057_g18_d0.75_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/057_g18_d0.75_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.9": {
+     "run_id": "060_g18_d0.9_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/060_g18_d0.9_brake_shared",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "shared"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 14.0,
+    "v_ego": 8.1
+   },
+   "family": "brake",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 5.978474320278684,
+    "d0": 0.318002504425445,
+    "t1": 99.0
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "000_g14_d0.0_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/000_g14_d0.0_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.15": {
+     "run_id": "003_g14_d0.15_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/003_g14_d0.15_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.3": {
+     "run_id": "006_g14_d0.3_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/006_g14_d0.3_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.45": {
+     "run_id": "009_g14_d0.45_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/009_g14_d0.45_brake_shared",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.6": {
+     "run_id": "012_g14_d0.6_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/012_g14_d0.6_brake_shared",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.75": {
+     "run_id": "015_g14_d0.75_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/015_g14_d0.75_brake_shared",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.9": {
+     "run_id": "018_g14_d0.9_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/018_g14_d0.9_brake_shared",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "shared"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 18.0,
+    "v_ego": 8.1
+   },
+   "family": "two_stage",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 5.97911846818319,
+    "a2": 5.492681724246033,
+    "d0": 0.365863820875553,
+    "t1": 1.3180948562768222
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "044_g18_d0.0_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/044_g18_d0.0_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.15": {
+     "run_id": "047_g18_d0.15_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/047_g18_d0.15_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.3": {
+     "run_id": "050_g18_d0.3_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/050_g18_d0.3_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.45": {
+     "run_id": "053_g18_d0.45_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/053_g18_d0.45_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.6": {
+     "run_id": "056_g18_d0.6_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/056_g18_d0.6_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.75": {
+     "run_id": "059_g18_d0.75_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/059_g18_d0.75_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.9": {
+     "run_id": "062_g18_d0.9_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/062_g18_d0.9_two_stage_shared",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "shared"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 16.0,
+    "v_ego": 8.1
+   },
+   "family": "surge_brake",
+   "policy_params": {
+    "a0": 0.3,
+    "a1": 7.2,
+    "d0": 0.2,
+    "t1": 99.0
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "022_g16_d0.0_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/022_g16_d0.0_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.15": {
+     "run_id": "025_g16_d0.15_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/025_g16_d0.15_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.3": {
+     "run_id": "034_mid_surge_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/034_mid_surge_brake_best",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.45": {
+     "run_id": "031_g16_d0.45_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/031_g16_d0.45_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.6": {
+     "run_id": "034_g16_d0.6_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/034_g16_d0.6_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.75": {
+     "run_id": "037_g16_d0.75_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/037_g16_d0.75_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.9": {
+     "run_id": "040_g16_d0.9_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/040_g16_d0.9_surge_brake_shared",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "shared"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 14.0,
+    "v_ego": 8.1
+   },
+   "family": "surge_brake",
+   "policy_params": {
+    "a0": 0.3,
+    "a1": 7.2,
+    "d0": 0.2,
+    "t1": 99.0
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "001_g14_d0.0_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/001_g14_d0.0_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.15": {
+     "run_id": "004_g14_d0.15_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/004_g14_d0.15_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.3": {
+     "run_id": "007_g14_d0.3_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/007_g14_d0.3_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.45": {
+     "run_id": "010_g14_d0.45_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/010_g14_d0.45_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.6": {
+     "run_id": "013_g14_d0.6_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/013_g14_d0.6_surge_brake_shared",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.75": {
+     "run_id": "016_g14_d0.75_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/016_g14_d0.75_surge_brake_shared",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    "0.9": {
+     "run_id": "019_g14_d0.9_surge_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/019_g14_d0.9_surge_brake_shared",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "shared"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 16.0,
+    "v_ego": 8.1
+   },
+   "family": "brake",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 5.978474320278684,
+    "d0": 0.318002504425445,
+    "t1": 99.0
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "021_g16_d0.0_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/021_g16_d0.0_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.15": {
+     "run_id": "024_g16_d0.15_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/024_g16_d0.15_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.3": {
+     "run_id": "012_mid_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/012_mid_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    "0.45": {
+     "run_id": "030_g16_d0.45_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/030_g16_d0.45_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.6": {
+     "run_id": "033_g16_d0.6_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/033_g16_d0.6_brake_shared",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.75": {
+     "run_id": "036_g16_d0.75_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/036_g16_d0.75_brake_shared",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "shared"
+    },
+    "0.9": {
+     "run_id": "039_g16_d0.9_brake_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/039_g16_d0.9_brake_shared",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "shared"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 14.0,
+    "v_ego": 8.1
+   },
+   "family": "two_stage",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 5.97911846818319,
+    "a2": 5.492681724246033,
+    "d0": 0.365863820875553,
+    "t1": 1.3180948562768222
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "002_g14_d0.0_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/002_g14_d0.0_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.15": {
+     "run_id": "005_g14_d0.15_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/005_g14_d0.15_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.3": {
+     "run_id": "008_g14_d0.3_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/008_g14_d0.3_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.45": {
+     "run_id": "011_g14_d0.45_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/011_g14_d0.45_two_stage_shared",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.6": {
+     "run_id": "014_g14_d0.6_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/014_g14_d0.6_two_stage_shared",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.75": {
+     "run_id": "017_g14_d0.75_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/017_g14_d0.75_two_stage_shared",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.9": {
+     "run_id": "020_g14_d0.9_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/020_g14_d0.9_two_stage_shared",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "shared"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 16.0,
+    "v_ego": 8.1
+   },
+   "family": "two_stage",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 5.97911846818319,
+    "a2": 5.492681724246033,
+    "d0": 0.365863820875553,
+    "t1": 1.3180948562768222
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "023_g16_d0.0_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/023_g16_d0.0_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.15": {
+     "run_id": "026_g16_d0.15_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/026_g16_d0.15_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.3": {
+     "run_id": "058_mid_two_stage_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/058_mid_two_stage_best",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    "0.45": {
+     "run_id": "032_g16_d0.45_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/032_g16_d0.45_two_stage_shared",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.6": {
+     "run_id": "035_g16_d0.6_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/035_g16_d0.6_two_stage_shared",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.75": {
+     "run_id": "038_g16_d0.75_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/038_g16_d0.75_two_stage_shared",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    "0.9": {
+     "run_id": "041_g16_d0.9_two_stage_shared",
+     "batch": "rc01/rc17_delay",
+     "dir": "results_search/rc01/carla/rc17_delay/runs/041_g16_d0.9_two_stage_shared",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "shared"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 14,
+    "v_ego": 8.1
+   },
+   "family": "brake",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 5.978474320278684,
+    "d0": 0.318002504425445,
+    "t1": 99.0
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "045_bnd_delay_s_0_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/045_bnd_delay_s_0_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    "0.2": {
+     "run_id": "047_bnd_delay_s_0.2_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/047_bnd_delay_s_0.2_brake_ref",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "ref"
+    },
+    "0.4": {
+     "run_id": "049_bnd_delay_s_0.4_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/049_bnd_delay_s_0.4_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    "0.5": {
+     "run_id": "015_bnd_delay_s_0.5_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/015_bnd_delay_s_0.5_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    "0.55": {
+     "run_id": "016_bnd_delay_s_0.55_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/016_bnd_delay_s_0.55_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    "0.575": {
+     "run_id": "017_bnd_delay_s_0.575_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/017_bnd_delay_s_0.575_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    "0.6": {
+     "run_id": "051_bnd_delay_s_0.6_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/051_bnd_delay_s_0.6_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    "0.8": {
+     "run_id": "053_bnd_delay_s_0.8_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/053_bnd_delay_s_0.8_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    "0.825": {
+     "run_id": "061_bnd_delay_s_0.825_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/061_bnd_delay_s_0.825_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    "0.85": {
+     "run_id": "059_bnd_delay_s_0.85_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/059_bnd_delay_s_0.85_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    "0.9": {
+     "run_id": "057_bnd_delay_s_0.9_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/057_bnd_delay_s_0.9_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    "1.0": {
+     "run_id": "055_bnd_delay_s_1_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/055_bnd_delay_s_1_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 14,
+    "v_ego": 8.1
+   },
+   "family": "brake",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 7.2,
+    "d0": 0.0,
+    "t1": 99.0
+   },
+   "by_delay_s": {
+    "0.8": {
+     "run_id": "052_bnd_delay_s_0.8_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/052_bnd_delay_s_0.8_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    "0.825": {
+     "run_id": "060_bnd_delay_s_0.825_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/060_bnd_delay_s_0.825_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    "0.85": {
+     "run_id": "058_bnd_delay_s_0.85_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/058_bnd_delay_s_0.85_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    "0.9": {
+     "run_id": "056_bnd_delay_s_0.9_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/056_bnd_delay_s_0.9_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    "1.0": {
+     "run_id": "054_bnd_delay_s_1_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/054_bnd_delay_s_1_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 14,
+    "v_ego": 8.1
+   },
+   "family": "two_stage",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 7.2,
+    "a2": 7.2,
+    "d0": 0.0,
+    "t1": 2.998499399899807
+   },
+   "by_delay_s": {
+    "0.825": {
+     "run_id": "077_bnd_delay_s_0.825_two_stage_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/077_bnd_delay_s_0.825_two_stage_best",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    "0.85": {
+     "run_id": "075_bnd_delay_s_0.85_two_stage_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/075_bnd_delay_s_0.85_two_stage_best",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    "0.9": {
+     "run_id": "073_bnd_delay_s_0.9_two_stage_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/073_bnd_delay_s_0.9_two_stage_best",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    "1.0": {
+     "run_id": "071_bnd_delay_s_1_two_stage_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/071_bnd_delay_s_1_two_stage_best",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "best"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 14,
+    "v_ego": 8.1
+   },
+   "family": "surge_brake",
+   "policy_params": {
+    "a0": 0.7313629761460603,
+    "a1": 6.948448271350956,
+    "d0": 0.37974636834574227,
+    "t1": 99.0
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "079_bnd_delay_s_0_surge_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/079_bnd_delay_s_0_surge_brake_best",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.2": {
+     "run_id": "081_bnd_delay_s_0.2_surge_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/081_bnd_delay_s_0.2_surge_brake_ref",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "ref"
+    },
+    "0.4": {
+     "run_id": "083_bnd_delay_s_0.4_surge_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/083_bnd_delay_s_0.4_surge_brake_ref",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "ref"
+    },
+    "0.5": {
+     "run_id": "091_bnd_delay_s_0.5_surge_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/091_bnd_delay_s_0.5_surge_brake_ref",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "ref"
+    },
+    "0.55": {
+     "run_id": "093_bnd_delay_s_0.55_surge_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/093_bnd_delay_s_0.55_surge_brake_ref",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "ref"
+    },
+    "0.575": {
+     "run_id": "095_bnd_delay_s_0.575_surge_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/095_bnd_delay_s_0.575_surge_brake_ref",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "ref"
+    },
+    "0.6": {
+     "run_id": "085_bnd_delay_s_0.6_surge_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/085_bnd_delay_s_0.6_surge_brake_ref",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "ref"
+    },
+    "0.8": {
+     "run_id": "087_bnd_delay_s_0.8_surge_brake_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/087_bnd_delay_s_0.8_surge_brake_ref",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "ref"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 14,
+    "v_ego": 8.1
+   },
+   "family": "two_stage",
+   "policy_params": {
+    "a0": 0.0,
+    "a1": 5.97911846818319,
+    "a2": 5.492681724246033,
+    "d0": 0.365863820875553,
+    "t1": 1.3180948562768222
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "062_bnd_delay_s_0_two_stage_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/062_bnd_delay_s_0_two_stage_best",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    "0.2": {
+     "run_id": "064_bnd_delay_s_0.2_two_stage_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/064_bnd_delay_s_0.2_two_stage_ref",
+     "label": "PASS",
+     "family": "two_stage",
+     "kind": "ref"
+    },
+    "0.4": {
+     "run_id": "066_bnd_delay_s_0.4_two_stage_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/066_bnd_delay_s_0.4_two_stage_ref",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "ref"
+    },
+    "0.5": {
+     "run_id": "061_bnd_delay_s_0.5_two_stage_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/061_bnd_delay_s_0.5_two_stage_best",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    "0.55": {
+     "run_id": "062_bnd_delay_s_0.55_two_stage_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/062_bnd_delay_s_0.55_two_stage_best",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    "0.575": {
+     "run_id": "063_bnd_delay_s_0.575_two_stage_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/063_bnd_delay_s_0.575_two_stage_best",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    "0.6": {
+     "run_id": "068_bnd_delay_s_0.6_two_stage_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/068_bnd_delay_s_0.6_two_stage_ref",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "ref"
+    },
+    "0.8": {
+     "run_id": "070_bnd_delay_s_0.8_two_stage_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/070_bnd_delay_s_0.8_two_stage_ref",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "ref"
+    },
+    "0.825": {
+     "run_id": "078_bnd_delay_s_0.825_two_stage_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/078_bnd_delay_s_0.825_two_stage_ref",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "ref"
+    },
+    "0.85": {
+     "run_id": "076_bnd_delay_s_0.85_two_stage_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/076_bnd_delay_s_0.85_two_stage_ref",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "ref"
+    },
+    "0.9": {
+     "run_id": "074_bnd_delay_s_0.9_two_stage_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/074_bnd_delay_s_0.9_two_stage_ref",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "ref"
+    },
+    "1.0": {
+     "run_id": "072_bnd_delay_s_1_two_stage_ref",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/072_bnd_delay_s_1_two_stage_ref",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "ref"
+    }
+   }
+  },
+  {
+   "scene": {
+    "gap": 14,
+    "v_ego": 8.1
+   },
+   "family": "surge_brake",
+   "policy_params": {
+    "a0": 0.3,
+    "a1": 7.2,
+    "d0": 0.2,
+    "t1": 99.0
+   },
+   "by_delay_s": {
+    "0.0": {
+     "run_id": "026_bnd_gap_14_surge_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/026_bnd_gap_14_surge_brake_best",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.2": {
+     "run_id": "032_bnd_delay_s_0.2_surge_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/032_bnd_delay_s_0.2_surge_brake_best",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.4": {
+     "run_id": "082_bnd_delay_s_0.4_surge_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/082_bnd_delay_s_0.4_surge_brake_best",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.5": {
+     "run_id": "090_bnd_delay_s_0.5_surge_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/090_bnd_delay_s_0.5_surge_brake_best",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.55": {
+     "run_id": "092_bnd_delay_s_0.55_surge_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/092_bnd_delay_s_0.55_surge_brake_best",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.575": {
+     "run_id": "094_bnd_delay_s_0.575_surge_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/094_bnd_delay_s_0.575_surge_brake_best",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.6": {
+     "run_id": "084_bnd_delay_s_0.6_surge_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/084_bnd_delay_s_0.6_surge_brake_best",
+     "label": "PASS",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.8": {
+     "run_id": "086_bnd_delay_s_0.8_surge_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/086_bnd_delay_s_0.8_surge_brake_best",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.825": {
+     "run_id": "038_bnd_delay_s_0.825_surge_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/038_bnd_delay_s_0.825_surge_brake_best",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.85": {
+     "run_id": "039_bnd_delay_s_0.85_surge_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/039_bnd_delay_s_0.85_surge_brake_best",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "0.9": {
+     "run_id": "040_bnd_delay_s_0.9_surge_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/040_bnd_delay_s_0.9_surge_brake_best",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    "1.0": {
+     "run_id": "088_bnd_delay_s_1_surge_brake_best",
+     "batch": "rc01/boundary_r2",
+     "dir": "results_search/rc01/carla/boundary_r2/runs/088_bnd_delay_s_1_surge_brake_best",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "best"
+    }
+   }
+  }
+ ]
+}

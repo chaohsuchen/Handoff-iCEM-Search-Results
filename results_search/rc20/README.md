@@ -1,0 +1,3 @@
+# RC20 (view over rc04)
+
+RC20 asks how the label depends on search coverage on the RC04 scene (brake, then change behind the truck). `members.json` -> `scenes[]`: one entry per (scene history, hidden world) with its label under the restricted library (`brake`, `lane_change`) and under the full library (+ `staged`), the evaluated families and the rc04 run folders behind it. `found_by_staged_only` = the staged plan makes the scene recoverable where the restricted library does not: the case RC20 is about. A scene in which a family was never evaluated is `UNRESOLVED` (missing evaluations are never failure). `counts` summarises.

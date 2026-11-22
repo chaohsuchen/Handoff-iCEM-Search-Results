@@ -1,0 +1,3641 @@
+{
+ "definition": "RC20: the RC04 scene, label under the restricted library (immediate lane change, straight braking) vs the full library (+ staged); a missing family is UNRESOLVED, never failure.",
+ "rule": "a (scene, hidden world) is recoverable under a library when one of its policies passes in CARLA; if no policy passes but a family of the library was never evaluated it is UNRESOLVED",
+ "counts": {
+  "UNRESOLVED | recoverable": 3,
+  "recoverable | recoverable": 31,
+  "unrecoverable within the library | unrecoverable within the library": 9
+ },
+ "scenes": [
+  {
+   "history_id": "h013f7899ff",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "staged"
+   ],
+   "restricted_library": "UNRESOLVED",
+   "full_library": "recoverable",
+   "found_by_staged_only": true,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "045_bnd_d_obs_50_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/045_bnd_d_obs_50_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "046_bnd_d_obs_50_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/046_bnd_d_obs_50_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "078_bnd_d_obs_50_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/078_bnd_d_obs_50_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "079_bnd_d_obs_50_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/079_bnd_d_obs_50_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "h029bf14c94",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "104_bnd_fol_gap_7_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/104_bnd_fol_gap_7_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "103_bnd_fol_gap_7_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/103_bnd_fol_gap_7_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "136_bnd_fol_gap_7_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/136_bnd_fol_gap_7_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "137_bnd_fol_gap_7_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/137_bnd_fol_gap_7_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "114_bnd_fol_gap_7_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/114_bnd_fol_gap_7_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "115_bnd_fol_gap_7_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/115_bnd_fol_gap_7_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "148_bnd_fol_gap_7_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/148_bnd_fol_gap_7_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "147_bnd_fol_gap_7_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/147_bnd_fol_gap_7_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "126_bnd_fol_gap_7_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/126_bnd_fol_gap_7_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "125_bnd_fol_gap_7_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/125_bnd_fol_gap_7_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "158_bnd_fol_gap_7_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/158_bnd_fol_gap_7_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "159_bnd_fol_gap_7_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/159_bnd_fol_gap_7_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "h02c7fb631c",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "002_bnd_d_obs_62_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/002_bnd_d_obs_62_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "001_bnd_d_obs_62_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/001_bnd_d_obs_62_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "035_bnd_d_obs_62_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/035_bnd_d_obs_62_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "034_bnd_d_obs_62_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/034_bnd_d_obs_62_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "021_bnd_d_obs_62_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/021_bnd_d_obs_62_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "020_bnd_d_obs_62_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/020_bnd_d_obs_62_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "054_bnd_d_obs_62_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/054_bnd_d_obs_62_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "053_bnd_d_obs_62_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/053_bnd_d_obs_62_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "033_bnd_d_obs_62_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/033_bnd_d_obs_62_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "034_bnd_d_obs_62_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/034_bnd_d_obs_62_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "067_bnd_d_obs_62_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/067_bnd_d_obs_62_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "066_bnd_d_obs_62_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/066_bnd_d_obs_62_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h09ab5dd825",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "097_bnd_fol_gap_20_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/097_bnd_fol_gap_20_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "098_bnd_fol_gap_20_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/098_bnd_fol_gap_20_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "131_bnd_fol_gap_20_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/131_bnd_fol_gap_20_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "130_bnd_fol_gap_20_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/130_bnd_fol_gap_20_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "108_bnd_fol_gap_20_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/108_bnd_fol_gap_20_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "109_bnd_fol_gap_20_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/109_bnd_fol_gap_20_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "141_bnd_fol_gap_20_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/141_bnd_fol_gap_20_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "142_bnd_fol_gap_20_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/142_bnd_fol_gap_20_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "119_bnd_fol_gap_20_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/119_bnd_fol_gap_20_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "120_bnd_fol_gap_20_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/120_bnd_fol_gap_20_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "152_bnd_fol_gap_20_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/152_bnd_fol_gap_20_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "153_bnd_fol_gap_20_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/153_bnd_fol_gap_20_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "h0b8efc5cdb",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "019_follower_close_brake_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/019_follower_close_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "020_follower_close_brake_boundary",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/020_follower_close_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "020_follower_close_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/020_follower_close_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "019_follower_close_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/019_follower_close_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "021_follower_close_lane_change_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/021_follower_close_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "021_follower_close_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/021_follower_close_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "022_follower_close_staged_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/022_follower_close_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "022_follower_close_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/022_follower_close_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h0bef2ee5b5",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "unrecoverable within the library",
+   "full_library": "unrecoverable within the library",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "096_bnd_fol_gap_30_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/096_bnd_fol_gap_30_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "129_bnd_fol_gap_30_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/129_bnd_fol_gap_30_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "107_bnd_fol_gap_30_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/107_bnd_fol_gap_30_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "140_bnd_fol_gap_30_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/140_bnd_fol_gap_30_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "118_bnd_fol_gap_30_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/118_bnd_fol_gap_30_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "151_bnd_fol_gap_30_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/151_bnd_fol_gap_30_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h1e5c87ef58",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "unrecoverable within the library",
+   "full_library": "unrecoverable within the library",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "010_bnd_d_obs_44_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/010_bnd_d_obs_44_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "009_bnd_d_obs_44_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/009_bnd_d_obs_44_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "042_bnd_d_obs_44_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/042_bnd_d_obs_44_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "043_bnd_d_obs_44_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/043_bnd_d_obs_44_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "029_bnd_d_obs_44_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/029_bnd_d_obs_44_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "028_bnd_d_obs_44_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/028_bnd_d_obs_44_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "062_bnd_d_obs_44_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/062_bnd_d_obs_44_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "061_bnd_d_obs_44_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/061_bnd_d_obs_44_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "042_bnd_d_obs_44_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/042_bnd_d_obs_44_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "041_bnd_d_obs_44_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/041_bnd_d_obs_44_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "075_bnd_d_obs_44_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/075_bnd_d_obs_44_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "074_bnd_d_obs_44_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/074_bnd_d_obs_44_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h1f7c0e8e43",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "028_benign_brake_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/028_benign_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "029_benign_brake_boundary",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/029_benign_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "028_benign_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/028_benign_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "029_benign_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/029_benign_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "030_benign_lane_change_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/030_benign_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "030_benign_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/030_benign_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "032_benign_staged_boundary",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/032_benign_staged_boundary",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "031_benign_staged_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/031_benign_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "032_benign_staged_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/032_benign_staged_boundary",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "031_benign_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/031_benign_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h2a1256ef82",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "101_bnd_fol_gap_10_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/101_bnd_fol_gap_10_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "102_bnd_fol_gap_10_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/102_bnd_fol_gap_10_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "135_bnd_fol_gap_10_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/135_bnd_fol_gap_10_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "134_bnd_fol_gap_10_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/134_bnd_fol_gap_10_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "112_bnd_fol_gap_10_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/112_bnd_fol_gap_10_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "113_bnd_fol_gap_10_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/113_bnd_fol_gap_10_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "145_bnd_fol_gap_10_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/145_bnd_fol_gap_10_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "146_bnd_fol_gap_10_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/146_bnd_fol_gap_10_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "123_bnd_fol_gap_10_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/123_bnd_fol_gap_10_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "124_bnd_fol_gap_10_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/124_bnd_fol_gap_10_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "156_bnd_fol_gap_10_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/156_bnd_fol_gap_10_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "157_bnd_fol_gap_10_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/157_bnd_fol_gap_10_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "h3a1d0ee4fb",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "unrecoverable within the library",
+   "full_library": "unrecoverable within the library",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "061_bnd_side_pos_4_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/061_bnd_side_pos_4_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "060_bnd_side_pos_4_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/060_bnd_side_pos_4_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "094_bnd_side_pos_4_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/094_bnd_side_pos_4_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "093_bnd_side_pos_4_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/093_bnd_side_pos_4_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "074_bnd_side_pos_4_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/074_bnd_side_pos_4_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "073_bnd_side_pos_4_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/073_bnd_side_pos_4_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "106_bnd_side_pos_4_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/106_bnd_side_pos_4_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "107_bnd_side_pos_4_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/107_bnd_side_pos_4_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "092_bnd_side_pos_4_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/092_bnd_side_pos_4_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "093_bnd_side_pos_4_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/093_bnd_side_pos_4_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "125_bnd_side_pos_4_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/125_bnd_side_pos_4_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "126_bnd_side_pos_4_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/126_bnd_side_pos_4_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "h3fc884502f",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "004_truck_far_ahead_brake_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/004_truck_far_ahead_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "004_truck_far_ahead_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/004_truck_far_ahead_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "005_truck_far_ahead_lane_change_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/005_truck_far_ahead_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "006_truck_far_ahead_lane_change_boundary",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/006_truck_far_ahead_lane_change_boundary",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "006_truck_far_ahead_lane_change_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/006_truck_far_ahead_lane_change_boundary",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "005_truck_far_ahead_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/005_truck_far_ahead_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "007_truck_far_ahead_staged_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/007_truck_far_ahead_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "007_truck_far_ahead_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/007_truck_far_ahead_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h419f8bb8c6",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "lane_change"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "082_bnd_side_pos_25.75_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/082_bnd_side_pos_25.75_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "081_bnd_side_pos_25.75_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/081_bnd_side_pos_25.75_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "115_bnd_side_pos_25.75_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/115_bnd_side_pos_25.75_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "114_bnd_side_pos_25.75_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/114_bnd_side_pos_25.75_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h42c552b637",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "unrecoverable within the library",
+   "full_library": "unrecoverable within the library",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "012_bnd_d_obs_40_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/012_bnd_d_obs_40_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "011_bnd_d_obs_40_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/011_bnd_d_obs_40_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "045_bnd_d_obs_40_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/045_bnd_d_obs_40_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "044_bnd_d_obs_40_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/044_bnd_d_obs_40_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "030_bnd_d_obs_40_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/030_bnd_d_obs_40_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "031_bnd_d_obs_40_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/031_bnd_d_obs_40_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "064_bnd_d_obs_40_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/064_bnd_d_obs_40_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "063_bnd_d_obs_40_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/063_bnd_d_obs_40_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "044_bnd_d_obs_40_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/044_bnd_d_obs_40_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "043_bnd_d_obs_40_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/043_bnd_d_obs_40_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "076_bnd_d_obs_40_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/076_bnd_d_obs_40_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "077_bnd_d_obs_40_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/077_bnd_d_obs_40_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "h45791505b4",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "unrecoverable within the library",
+   "full_library": "unrecoverable within the library",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "059_bnd_side_pos_10_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/059_bnd_side_pos_10_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "058_bnd_side_pos_10_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/058_bnd_side_pos_10_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "092_bnd_side_pos_10_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/092_bnd_side_pos_10_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "091_bnd_side_pos_10_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/091_bnd_side_pos_10_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "071_bnd_side_pos_10_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/071_bnd_side_pos_10_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "072_bnd_side_pos_10_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/072_bnd_side_pos_10_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "104_bnd_side_pos_10_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/104_bnd_side_pos_10_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "105_bnd_side_pos_10_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/105_bnd_side_pos_10_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "090_bnd_side_pos_10_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/090_bnd_side_pos_10_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "091_bnd_side_pos_10_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/091_bnd_side_pos_10_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "124_bnd_side_pos_10_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/124_bnd_side_pos_10_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "123_bnd_side_pos_10_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/123_bnd_side_pos_10_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h45c24a7a9e",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "053_bnd_side_pos_28_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/053_bnd_side_pos_28_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "052_bnd_side_pos_28_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/052_bnd_side_pos_28_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "086_bnd_side_pos_28_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/086_bnd_side_pos_28_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "085_bnd_side_pos_28_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/085_bnd_side_pos_28_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "066_bnd_side_pos_28_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/066_bnd_side_pos_28_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "065_bnd_side_pos_28_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/065_bnd_side_pos_28_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "098_bnd_side_pos_28_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/098_bnd_side_pos_28_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "099_bnd_side_pos_28_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/099_bnd_side_pos_28_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "085_bnd_side_pos_28_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/085_bnd_side_pos_28_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "084_bnd_side_pos_28_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/084_bnd_side_pos_28_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "118_bnd_side_pos_28_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/118_bnd_side_pos_28_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "117_bnd_side_pos_28_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/117_bnd_side_pos_28_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h461031101c",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "003_bnd_d_obs_56_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/003_bnd_d_obs_56_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "004_bnd_d_obs_56_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/004_bnd_d_obs_56_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "036_bnd_d_obs_56_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/036_bnd_d_obs_56_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "037_bnd_d_obs_56_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/037_bnd_d_obs_56_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "023_bnd_d_obs_56_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/023_bnd_d_obs_56_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "022_bnd_d_obs_56_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/022_bnd_d_obs_56_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "055_bnd_d_obs_56_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/055_bnd_d_obs_56_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "056_bnd_d_obs_56_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/056_bnd_d_obs_56_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "035_bnd_d_obs_56_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/035_bnd_d_obs_56_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "036_bnd_d_obs_56_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/036_bnd_d_obs_56_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "069_bnd_d_obs_56_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/069_bnd_d_obs_56_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "068_bnd_d_obs_56_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/068_bnd_d_obs_56_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h48342a8772",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "lane_change"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "077_bnd_side_pos_25_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/077_bnd_side_pos_25_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "078_bnd_side_pos_25_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/078_bnd_side_pos_25_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "111_bnd_side_pos_25_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/111_bnd_side_pos_25_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "110_bnd_side_pos_25_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/110_bnd_side_pos_25_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h4f3de1dbed",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "167_mid_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/167_mid_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "168_mid_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/168_mid_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "006_mid_brake_boundary",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/006_mid_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "005_mid_brake_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/005_mid_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "169_mid_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/169_mid_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "007_mid_lane_change_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/007_mid_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "170_mid_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/170_mid_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "008_mid_staged_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/008_mid_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h5b97a0861f",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "106_bnd_fol_gap_5_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/106_bnd_fol_gap_5_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "105_bnd_fol_gap_5_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/105_bnd_fol_gap_5_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "138_bnd_fol_gap_5_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/138_bnd_fol_gap_5_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "139_bnd_fol_gap_5_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/139_bnd_fol_gap_5_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "117_bnd_fol_gap_5_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/117_bnd_fol_gap_5_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "116_bnd_fol_gap_5_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/116_bnd_fol_gap_5_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "149_bnd_fol_gap_5_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/149_bnd_fol_gap_5_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "150_bnd_fol_gap_5_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/150_bnd_fol_gap_5_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "127_bnd_fol_gap_5_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/127_bnd_fol_gap_5_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "128_bnd_fol_gap_5_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/128_bnd_fol_gap_5_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "161_bnd_fol_gap_5_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/161_bnd_fol_gap_5_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "160_bnd_fol_gap_5_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/160_bnd_fol_gap_5_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h658f4a91e6",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "000_bnd_d_obs_70_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/000_bnd_d_obs_70_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "033_bnd_d_obs_70_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/033_bnd_d_obs_70_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "019_bnd_d_obs_70_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/019_bnd_d_obs_70_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "052_bnd_d_obs_70_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/052_bnd_d_obs_70_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "032_bnd_d_obs_70_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/032_bnd_d_obs_70_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "065_bnd_d_obs_70_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/065_bnd_d_obs_70_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h67ce69bfe6",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "unrecoverable within the library",
+   "full_library": "unrecoverable within the library",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "182_hard_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/182_hard_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "020_hard_brake_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/020_hard_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "183_hard_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/183_hard_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "021_hard_lane_change_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/021_hard_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "184_hard_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/184_hard_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "022_hard_staged_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/022_hard_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h68dc960e6e",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "055_bnd_side_pos_22_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/055_bnd_side_pos_22_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "054_bnd_side_pos_22_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/054_bnd_side_pos_22_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "087_bnd_side_pos_22_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/087_bnd_side_pos_22_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "088_bnd_side_pos_22_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/088_bnd_side_pos_22_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "068_bnd_side_pos_22_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/068_bnd_side_pos_22_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "067_bnd_side_pos_22_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/067_bnd_side_pos_22_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "100_bnd_side_pos_22_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/100_bnd_side_pos_22_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "101_bnd_side_pos_22_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/101_bnd_side_pos_22_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "086_bnd_side_pos_22_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/086_bnd_side_pos_22_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "087_bnd_side_pos_22_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/087_bnd_side_pos_22_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "120_bnd_side_pos_22_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/120_bnd_side_pos_22_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "119_bnd_side_pos_22_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/119_bnd_side_pos_22_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h73663bee9b",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "163_easy_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/163_easy_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "162_easy_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/162_easy_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "001_easy_brake_boundary",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/001_easy_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "000_easy_brake_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/000_easy_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "164_easy_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/164_easy_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "002_easy_lane_change_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/002_easy_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "165_easy_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/165_easy_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "166_easy_staged_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/166_easy_staged_boundary",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "003_easy_staged_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/003_easy_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "004_easy_staged_boundary",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/004_easy_staged_boundary",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "boundary"
+    }
+   ]
+  },
+  {
+   "history_id": "h79835b95c1",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "unrecoverable within the library",
+   "full_library": "unrecoverable within the library",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "008_near_obstacle_brake_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/008_near_obstacle_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "008_near_obstacle_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/008_near_obstacle_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "009_near_obstacle_lane_change_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/009_near_obstacle_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "009_near_obstacle_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/009_near_obstacle_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "010_near_obstacle_staged_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/010_near_obstacle_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "010_near_obstacle_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/010_near_obstacle_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h89efd816b4",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "016_truck_behind_brake_boundary",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/016_truck_behind_brake_boundary",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "015_truck_behind_brake_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/015_truck_behind_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "015_truck_behind_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/015_truck_behind_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "016_truck_behind_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/016_truck_behind_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "017_truck_behind_lane_change_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/017_truck_behind_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "017_truck_behind_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/017_truck_behind_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "018_truck_behind_staged_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/018_truck_behind_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "018_truck_behind_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/018_truck_behind_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h8a31158e70",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "175_lane_change_boundary_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/175_lane_change_boundary_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "013_lane_change_boundary_brake_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/013_lane_change_boundary_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "176_lane_change_boundary_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/176_lane_change_boundary_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "014_lane_change_boundary_lane_change_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/014_lane_change_boundary_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "177_lane_change_boundary_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/177_lane_change_boundary_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "015_lane_change_boundary_staged_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/015_lane_change_boundary_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h8dcee5ebb7",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "005_bnd_d_obs_52_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/005_bnd_d_obs_52_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "006_bnd_d_obs_52_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/006_bnd_d_obs_52_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "039_bnd_d_obs_52_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/039_bnd_d_obs_52_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "038_bnd_d_obs_52_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/038_bnd_d_obs_52_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "025_bnd_d_obs_52_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/025_bnd_d_obs_52_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "024_bnd_d_obs_52_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/024_bnd_d_obs_52_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "058_bnd_d_obs_52_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/058_bnd_d_obs_52_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "057_bnd_d_obs_52_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/057_bnd_d_obs_52_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "037_bnd_d_obs_52_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/037_bnd_d_obs_52_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "038_bnd_d_obs_52_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/038_bnd_d_obs_52_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "071_bnd_d_obs_52_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/071_bnd_d_obs_52_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "070_bnd_d_obs_52_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/070_bnd_d_obs_52_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h95ac6646fe",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "staged"
+   ],
+   "restricted_library": "UNRESOLVED",
+   "full_library": "recoverable",
+   "found_by_staged_only": true,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "049_bnd_d_obs_49.5_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/049_bnd_d_obs_49.5_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "050_bnd_d_obs_49.5_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/050_bnd_d_obs_49.5_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "082_bnd_d_obs_49.5_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/082_bnd_d_obs_49.5_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "083_bnd_d_obs_49.5_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/083_bnd_d_obs_49.5_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "h995f8c1f58",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "lane_change"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "079_bnd_side_pos_26.5_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/079_bnd_side_pos_26.5_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "080_bnd_side_pos_26.5_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/080_bnd_side_pos_26.5_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "112_bnd_side_pos_26.5_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/112_bnd_side_pos_26.5_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "113_bnd_side_pos_26.5_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/113_bnd_side_pos_26.5_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "h9ddd9efde3",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "001_baseline_brake_boundary",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/001_baseline_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "000_baseline_brake_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/000_baseline_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "000_baseline_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/000_baseline_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "001_baseline_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/001_baseline_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "002_baseline_lane_change_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/002_baseline_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "002_baseline_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/002_baseline_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "003_baseline_staged_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/003_baseline_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "003_baseline_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/003_baseline_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "h9dfe1c83f2",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "024_no_follower_brake_boundary",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/024_no_follower_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "023_no_follower_brake_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/023_no_follower_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "024_no_follower_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/024_no_follower_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "023_no_follower_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/023_no_follower_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "025_no_follower_lane_change_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/025_no_follower_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "025_no_follower_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/025_no_follower_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "027_no_follower_staged_boundary",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/027_no_follower_staged_boundary",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "026_no_follower_staged_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/026_no_follower_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "026_no_follower_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/026_no_follower_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "027_no_follower_staged_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/027_no_follower_staged_boundary",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "boundary"
+    }
+   ]
+  },
+  {
+   "history_id": "ha964b3814c",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "unrecoverable within the library",
+   "full_library": "unrecoverable within the library",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "063_bnd_side_pos_0_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/063_bnd_side_pos_0_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "062_bnd_side_pos_0_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/062_bnd_side_pos_0_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "095_bnd_side_pos_0_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/095_bnd_side_pos_0_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "096_bnd_side_pos_0_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/096_bnd_side_pos_0_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "076_bnd_side_pos_0_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/076_bnd_side_pos_0_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "075_bnd_side_pos_0_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/075_bnd_side_pos_0_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "109_bnd_side_pos_0_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/109_bnd_side_pos_0_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "108_bnd_side_pos_0_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/108_bnd_side_pos_0_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "095_bnd_side_pos_0_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/095_bnd_side_pos_0_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "094_bnd_side_pos_0_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/094_bnd_side_pos_0_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "127_bnd_side_pos_0_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/127_bnd_side_pos_0_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "128_bnd_side_pos_0_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/128_bnd_side_pos_0_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "hbdfec79884",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "171_brake_boundary_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/171_brake_boundary_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "172_brake_boundary_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/172_brake_boundary_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "009_brake_boundary_brake_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/009_brake_boundary_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "010_brake_boundary_brake_boundary",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/010_brake_boundary_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "173_brake_boundary_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/173_brake_boundary_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "011_brake_boundary_lane_change_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/011_brake_boundary_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "174_brake_boundary_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/174_brake_boundary_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "012_brake_boundary_staged_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/012_brake_boundary_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "hbeb6935a5e",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "008_bnd_d_obs_48_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/008_bnd_d_obs_48_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "007_bnd_d_obs_48_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/007_bnd_d_obs_48_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "040_bnd_d_obs_48_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/040_bnd_d_obs_48_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "041_bnd_d_obs_48_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/041_bnd_d_obs_48_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "026_bnd_d_obs_48_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/026_bnd_d_obs_48_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "027_bnd_d_obs_48_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/027_bnd_d_obs_48_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "060_bnd_d_obs_48_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/060_bnd_d_obs_48_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "059_bnd_d_obs_48_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/059_bnd_d_obs_48_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "040_bnd_d_obs_48_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/040_bnd_d_obs_48_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "039_bnd_d_obs_48_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/039_bnd_d_obs_48_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "072_bnd_d_obs_48_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/072_bnd_d_obs_48_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "073_bnd_d_obs_48_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/073_bnd_d_obs_48_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "hc221415922",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "051_bnd_side_pos_34_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/051_bnd_side_pos_34_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "084_bnd_side_pos_34_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/084_bnd_side_pos_34_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "064_bnd_side_pos_34_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/064_bnd_side_pos_34_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "097_bnd_side_pos_34_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/097_bnd_side_pos_34_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "083_bnd_side_pos_34_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/083_bnd_side_pos_34_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "116_bnd_side_pos_34_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/116_bnd_side_pos_34_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "hcddda76740",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "012_slow_truck_brake_boundary",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/012_slow_truck_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "011_slow_truck_brake_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/011_slow_truck_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "012_slow_truck_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/012_slow_truck_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "011_slow_truck_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/011_slow_truck_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "013_slow_truck_lane_change_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/013_slow_truck_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "013_slow_truck_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/013_slow_truck_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "014_slow_truck_staged_best",
+     "batch": "rc04/baseline",
+     "dir": "results_search/rc04/carla/baseline/runs/014_slow_truck_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "014_slow_truck_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/014_slow_truck_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "he1a27fa251",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "staged"
+   ],
+   "restricted_library": "UNRESOLVED",
+   "full_library": "recoverable",
+   "found_by_staged_only": true,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "048_bnd_d_obs_49_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/048_bnd_d_obs_49_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "047_bnd_d_obs_49_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/047_bnd_d_obs_49_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "080_bnd_d_obs_49_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/080_bnd_d_obs_49_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "081_bnd_d_obs_49_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/081_bnd_d_obs_49_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    }
+   ]
+  },
+  {
+   "history_id": "he2cd036ae0",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "100_bnd_fol_gap_14_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/100_bnd_fol_gap_14_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "099_bnd_fol_gap_14_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/099_bnd_fol_gap_14_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "132_bnd_fol_gap_14_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/132_bnd_fol_gap_14_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "133_bnd_fol_gap_14_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/133_bnd_fol_gap_14_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "110_bnd_fol_gap_14_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/110_bnd_fol_gap_14_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "111_bnd_fol_gap_14_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/111_bnd_fol_gap_14_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "143_bnd_fol_gap_14_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/143_bnd_fol_gap_14_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "144_bnd_fol_gap_14_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/144_bnd_fol_gap_14_lane_change_ref",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "122_bnd_fol_gap_14_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/122_bnd_fol_gap_14_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "121_bnd_fol_gap_14_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/121_bnd_fol_gap_14_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "155_bnd_fol_gap_14_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/155_bnd_fol_gap_14_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "154_bnd_fol_gap_14_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/154_bnd_fol_gap_14_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "he583fcd985",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "013_bnd_d_obs_46_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/013_bnd_d_obs_46_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "014_bnd_d_obs_46_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/014_bnd_d_obs_46_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "047_bnd_d_obs_46_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/047_bnd_d_obs_46_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "046_bnd_d_obs_46_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/046_bnd_d_obs_46_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "he8021552f6",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "179_follower_hard_brake_boundary",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/179_follower_hard_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "178_follower_hard_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/178_follower_hard_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "016_follower_hard_brake_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/016_follower_hard_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "017_follower_hard_brake_boundary",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/017_follower_hard_brake_boundary",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "boundary"
+    },
+    {
+     "run_id": "180_follower_hard_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/180_follower_hard_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "018_follower_hard_lane_change_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/018_follower_hard_lane_change_best",
+     "label": "PASS",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "181_follower_hard_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/181_follower_hard_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "019_follower_hard_staged_best",
+     "batch": "rc04/presets_main",
+     "dir": "results_search/rc04/carla/presets_main/runs/019_follower_hard_staged_best",
+     "label": "PASS",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "heae829bb37",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "017_bnd_d_obs_46.5_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/017_bnd_d_obs_46.5_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "018_bnd_d_obs_46.5_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/018_bnd_d_obs_46.5_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "051_bnd_d_obs_46.5_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/051_bnd_d_obs_46.5_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "050_bnd_d_obs_46.5_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/050_bnd_d_obs_46.5_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "hf16a4167e4",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake"
+   ],
+   "restricted_library": "recoverable",
+   "full_library": "recoverable",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "016_bnd_d_obs_47_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/016_bnd_d_obs_47_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "015_bnd_d_obs_47_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/015_bnd_d_obs_47_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "049_bnd_d_obs_47_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/049_bnd_d_obs_47_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "048_bnd_d_obs_47_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/048_bnd_d_obs_47_brake_best",
+     "label": "PASS",
+     "family": "brake",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "history_id": "hffe30d3e93",
+   "hidden_world": null,
+   "scene": "stopped_car_truck_alongside",
+   "evaluated_families": [
+    "brake",
+    "lane_change",
+    "staged"
+   ],
+   "restricted_library": "unrecoverable within the library",
+   "full_library": "unrecoverable within the library",
+   "found_by_staged_only": false,
+   "library_version": "rc04 families brake, lane_change, staged (rcx/rc04_laws.py)",
+   "runs": [
+    {
+     "run_id": "057_bnd_side_pos_16_brake_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/057_bnd_side_pos_16_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "056_bnd_side_pos_16_brake_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/056_bnd_side_pos_16_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "090_bnd_side_pos_16_brake_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/090_bnd_side_pos_16_brake_ref",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "ref"
+    },
+    {
+     "run_id": "089_bnd_side_pos_16_brake_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/089_bnd_side_pos_16_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "070_bnd_side_pos_16_lane_change_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/070_bnd_side_pos_16_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "069_bnd_side_pos_16_lane_change_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/069_bnd_side_pos_16_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "102_bnd_side_pos_16_lane_change_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/102_bnd_side_pos_16_lane_change_best",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "best"
+    },
+    {
+     "run_id": "103_bnd_side_pos_16_lane_change_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/103_bnd_side_pos_16_lane_change_ref",
+     "label": "FAIL",
+     "family": "lane_change",
+     "kind": "ref"
+    },
+    {
+     "run_id": "089_bnd_side_pos_16_staged_ref",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/089_bnd_side_pos_16_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "088_bnd_side_pos_16_staged_best",
+     "batch": "rc04/boundary_r2",
+     "dir": "results_search/rc04/carla/boundary_r2/runs/088_bnd_side_pos_16_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    },
+    {
+     "run_id": "122_bnd_side_pos_16_staged_ref",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/122_bnd_side_pos_16_staged_ref",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "ref"
+    },
+    {
+     "run_id": "121_bnd_side_pos_16_staged_best",
+     "batch": "rc04/pre6",
+     "dir": "results_search/rc04/carla/pre6/runs/121_bnd_side_pos_16_staged_best",
+     "label": "FAIL",
+     "family": "staged",
+     "kind": "best"
+    }
+   ]
+  }
+ ]
+}

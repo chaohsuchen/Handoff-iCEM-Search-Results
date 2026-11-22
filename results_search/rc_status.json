@@ -1,0 +1,113 @@
+{
+ "rc01": {
+  "scene": "street_van",
+  "note": "5 'van moved' INVALID re-ran as INVALID again (not recoverable); excluded from labels"
+ },
+ "rc02": {
+  "scene": "street_van (no policy reaches PASS)",
+  "where": "view of rc01: results_search/rc02/members.json (+ new runs rc01/rc02_gap)",
+  "view": true
+ },
+ "rc03": {
+  "scene": "spun_car",
+  "superseded": [
+   "baseline",
+   "boundary_r3",
+   "presets_22mps"
+  ],
+  "note": "superseded batches are the same candidates at pre-roll 0.5 s; use pre6 (5 s recorded)"
+ },
+ "rc04": {
+  "scene": "stopped_car_truck_alongside",
+  "superseded": [
+   "baseline",
+   "boundary_r2",
+   "presets_main"
+  ],
+  "note": "use pre6 (5 s recorded)"
+ },
+ "rc05": {
+  "scene": "lane_change_abort",
+  "superseded": [
+   "baseline",
+   "boundary_r1",
+   "presets_r2"
+  ],
+  "note": "use pre6 (5 s recorded); 6 INVALID (cue mismatch)"
+ },
+ "rc06": {
+  "scene": "broken_car_passer",
+  "superseded": [
+   "baseline",
+   "boundary_r1",
+   "presets_main"
+  ],
+  "note": "pre6: 165 of 199 scenes; the other 34 cannot be spawned at 6 s (rc06/carla/pre6/not_spawnable.json), only their old short-history runs exist"
+ },
+ "rc07": {
+  "scene": "blowout_onramp"
+ },
+ "rc08": {
+  "scene": "garbage_truck"
+ },
+ "rc09": {
+  "scene": "tunnel_squeeze",
+  "superseded": [
+   "baseline",
+   "boundary_r1",
+   "presets_r2"
+  ],
+  "note": "use pre6 (5 s recorded); 3 INVALID (tunnel wall overlap)"
+ },
+ "rc10": {
+  "scene": "spinning_lead"
+ },
+ "rc11": {
+  "scene": "spinning_lead"
+ },
+ "rc12": {
+  "scene": "spun_car",
+  "superseded": [
+   "vsearch"
+  ]
+ },
+ "rc13": {
+  "scene": "sidewalk_pedestrian_dart",
+  "superseded": [
+   "baseline",
+   "boundary_r1",
+   "presets_r2"
+  ],
+  "note": "use pre6 (5 s recorded); 63 INVALID: at 6 s pre-roll the pedestrians leave the sidewalk / start speed mismatches (road too short for the shifted scene); the old 1.5 s run of the same scene is the only valid one"
+ },
+ "rc14": {
+  "scene": "hidden_motorbike"
+ },
+ "rc15": {
+  "scene": "lane_end_merge",
+  "note": "geometry limits the recorded time before the cue"
+ },
+ "rc16": {
+  "scene": "double_parked_van"
+ },
+ "rc17": {
+  "scene": "street_van (reaction delay)",
+  "where": "view of rc01: results_search/rc17/members.json (+ new runs rc01/rc17_delay)",
+  "view": true
+ },
+ "rc18": {
+  "scene": "spun_car (wet / heavy rain, bends)",
+  "note": "4 s recorded (RC_PREFIX_T=4)"
+ },
+ "rc19": {
+  "scene": "blowout_onramp / spun_car / spinning_lead (benign)",
+  "superseded": [
+   "on_rc03"
+  ]
+ },
+ "rc20": {
+  "scene": "stopped_car_truck_alongside (library labels)",
+  "where": "view of rc04: results_search/rc20/members.json",
+  "view": true
+ }
+}

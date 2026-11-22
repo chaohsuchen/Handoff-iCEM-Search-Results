@@ -1,0 +1,154 @@
+{
+ "definition": "RC02: the RC01 scene with the trigger gap below the stopping distance; nothing works (negative case). docs/scenes/20RCs.md: generated from RC01's gap range, not a separate scene.",
+ "rule": "scenes of rc01 with delay_s = 0 and at least 3 evaluated policies in which no policy passes",
+ "scenes": [
+  {
+   "scene": {
+    "gap": 8.0,
+    "v_ego": 9.5
+   },
+   "n_policies": 7,
+   "runs": [
+    {
+     "run_id": "037_g8_v9.5_two_stage_best",
+     "batch": "rc01/baseline",
+     "dir": "results_search/rc01/carla/baseline/runs/037_g8_v9.5_two_stage_best",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    {
+     "run_id": "038_g8_v9.5_surge_brake_best",
+     "batch": "rc01/baseline",
+     "dir": "results_search/rc01/carla/baseline/runs/038_g8_v9.5_surge_brake_best",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "036_g8_v9.5_brake_best",
+     "batch": "rc01/baseline",
+     "dir": "results_search/rc01/carla/baseline/runs/036_g8_v9.5_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "009_v9.5_g8_brake_shared",
+     "batch": "rc01/rc02_gap",
+     "dir": "results_search/rc01/carla/rc02_gap/runs/009_v9.5_g8_brake_shared",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "shared"
+    },
+    {
+     "run_id": "010_v9.5_g8_surge_brake_shared",
+     "batch": "rc01/rc02_gap",
+     "dir": "results_search/rc01/carla/rc02_gap/runs/010_v9.5_g8_surge_brake_shared",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "shared"
+    },
+    {
+     "run_id": "022_g8_v9.5_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/022_g8_v9.5_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "043_g8_v9.5_surge_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/043_g8_v9.5_surge_brake_best",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "scene": {
+    "delay_s": 0.0,
+    "gap": 8.0,
+    "v_ego": 9.5
+   },
+   "n_policies": 5,
+   "runs": [
+    {
+     "run_id": "024_fast_hard_two_stage_best",
+     "batch": "rc01/presets_r2",
+     "dir": "results_search/rc01/carla/presets_r2/runs/024_fast_hard_two_stage_best",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "best"
+    },
+    {
+     "run_id": "023_fast_hard_brake_best",
+     "batch": "rc01/presets_r2",
+     "dir": "results_search/rc01/carla/presets_r2/runs/023_fast_hard_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "025_fast_hard_surge_brake_best",
+     "batch": "rc01/presets_r2",
+     "dir": "results_search/rc01/carla/presets_r2/runs/025_fast_hard_surge_brake_best",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "007_fast_hard_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/007_fast_hard_brake_best",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "best"
+    },
+    {
+     "run_id": "031_fast_hard_surge_brake_best",
+     "batch": "rc01/r4_shared",
+     "dir": "results_search/rc01/carla/r4_shared/runs/031_fast_hard_surge_brake_best",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "best"
+    }
+   ]
+  },
+  {
+   "scene": {
+    "gap": 9.0,
+    "v_ego": 9.5
+   },
+   "n_policies": 3,
+   "runs": [
+    {
+     "run_id": "014_v9.5_g9_two_stage_shared",
+     "batch": "rc01/rc02_gap",
+     "dir": "results_search/rc01/carla/rc02_gap/runs/014_v9.5_g9_two_stage_shared",
+     "label": "FAIL",
+     "family": "two_stage",
+     "kind": "shared"
+    },
+    {
+     "run_id": "012_v9.5_g9_brake_shared",
+     "batch": "rc01/rc02_gap",
+     "dir": "results_search/rc01/carla/rc02_gap/runs/012_v9.5_g9_brake_shared",
+     "label": "FAIL",
+     "family": "brake",
+     "kind": "shared"
+    },
+    {
+     "run_id": "013_v9.5_g9_surge_brake_shared",
+     "batch": "rc01/rc02_gap",
+     "dir": "results_search/rc01/carla/rc02_gap/runs/013_v9.5_g9_surge_brake_shared",
+     "label": "FAIL",
+     "family": "surge_brake",
+     "kind": "shared"
+    }
+   ]
+  }
+ ]
+}
