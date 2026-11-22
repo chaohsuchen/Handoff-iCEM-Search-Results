@@ -1,0 +1,9 @@
+{"id": "017_fast_passer_brake_boundary", "scenario": "fast_passer", "family": "brake", "kind": "boundary", "error": "RuntimeError('spawn failed vehicle.audi.a2 s=-26.7 t=-3.5')"}
+{"id": "018_fast_passer_lane_change_best", "scenario": "fast_passer", "family": "lane_change", "kind": "best", "error": "RuntimeError('spawn failed vehicle.audi.a2 s=-26.7 t=-3.5')"}
+{"id": "105_bnd_side_pos_14_lane_change_best", "scenario": "bnd_side_pos_14", "family": "lane_change", "kind": "best", "error": "RuntimeError('spawn failed vehicle.tesla.model3 s=40.0 t=0.0')"}
+{"id": "142_bnd_v_side_23_brake_ref", "scenario": "bnd_v_side_23", "family": "brake", "kind": "ref", "error": "RuntimeError('spawn failed vehicle.tesla.model3 s=40.0 t=0.0')"}
+{"id": "015_passer_behind_staged_boundary", "scenario": "passer_behind", "family": "staged", "kind": "boundary", "error": "RuntimeError('spawn failed vehicle.audi.a2 s=-20.699999999999996 t=-3.5')"}
+{"id": "023_slow_passer_lane_change_best", "scenario": "slow_passer", "family": "lane_change", "kind": "best", "error": "RuntimeError('spawn failed vehicle.tesla.model3 s=40.0 t=0.0')"}
+{"id": "185_boundary_staged_boundary", "scenario": "boundary", "family": "staged", "kind": "boundary", "error": "RuntimeError('spawn failed vehicle.audi.a2 s=-20.7 t=-3.5')"}
+{"id": "016_fast_passer_brake_best", "scenario": "fast_passer", "family": "brake", "kind": "best", "error": "RuntimeError('spawn failed vehicle.audi.a2 s=-26.7 t=-3.5')"}
+{"id": "024_slow_passer_staged_best", "scenario": "slow_passer", "family": "staged", "kind": "best", "error": "RuntimeError('spawn failed vehicle.tesla.model3 s=40.0 t=0.0')"}
