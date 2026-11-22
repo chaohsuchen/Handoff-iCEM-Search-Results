@@ -1,0 +1,380 @@
+{
+ "run_id": "014_v9.5_g9_two_stage_shared",
+ "rc": "RC01-01",
+ "label": "FAIL",
+ "reason": "contact at t=+1.05s after observation; measured motion exceeded the physics envelope",
+ "end_reason": "contact",
+ "scenario": {
+  "rc": "RC01-01",
+  "map": "Town01",
+  "road": 15,
+  "lane": -1,
+  "s0": 3.0,
+  "van_s": 100.0,
+  "gap": 9.0,
+  "v_ego": 9.5,
+  "clear": 1.5,
+  "n_per_side": 3,
+  "delay_s": 0.0,
+  "seed": 7,
+  "ego_bp": "vehicle.tesla.model3",
+  "van_bp": "vehicle.mercedes.sprinter",
+  "lane_w": 4.0,
+  "shoulder": 0.3,
+  "brake_torque_scale": 1.0,
+  "parked_bps": [
+   "vehicle.audi.a2",
+   "vehicle.toyota.prius",
+   "vehicle.seat.leon",
+   "vehicle.mini.cooper_s",
+   "vehicle.citroen.c3",
+   "vehicle.nissan.micra"
+  ],
+  "row_range": [
+   6.0,
+   114.0
+  ],
+  "walker_range": [
+   10.0,
+   108.0
+  ],
+  "cruise_before_cue_s": 2.5,
+  "accel_est": 1.1,
+  "row_gap": [
+   0.35,
+   0.7
+  ],
+  "speed_tol": 0.2,
+  "gap_tol": 0.5,
+  "accel_filter_s": 0.2,
+  "time_limit": 8.0,
+  "hold_time": 2.0,
+  "hold_speed": 0.1,
+  "min_clearance": 2.0
+ },
+ "policy": {
+  "name": "profile_policy",
+  "version": "rc09-prof-v1",
+  "params": {
+   "v_target": 9.5,
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  }
+ },
+ "calibration": {
+  "brake_cmd": [
+   0.0,
+   0.04,
+   0.08,
+   0.12,
+   0.16,
+   0.2,
+   0.3,
+   0.5,
+   0.7
+  ],
+  "brake_decel": [
+   2.10702029229239,
+   2.5225329564956978,
+   2.927756029652377,
+   3.2983253394216674,
+   3.6933163818857984,
+   4.050990677250218,
+   4.946971470564712,
+   6.697954265454722,
+   8.288548466334195
+  ],
+  "brake_cap": 0.7,
+  "coast_decel": 2.10702029229239,
+  "brake_delay_s": 0.05,
+  "cruise_throttle": 0.39390997768192726,
+  "max_decel": 8.288548466334195
+ },
+ "metrics": {
+  "start_speed": 9.525578612029056,
+  "start_gap": 8.753303002633231,
+  "min_gap": -0.07793840291047616,
+  "stopping_gap": null,
+  "hold_min_gap": null,
+  "max_filtered_accel": {
+   "forward": 0.060797248321934685,
+   "brake": 32.39759371038384,
+   "lateral": 0.5479356729102467,
+   "planar": 32.400201767374334
+  },
+  "clear_width_measured": 1.4947192095984576,
+  "van_blocks_route": true,
+  "pedestrians": 8,
+  "ego_width": 2.163450002670288,
+  "delay_s": 0.0,
+  "min_wall_clearance": 1.0353533304576454,
+  "max_lateral_excursion_m": 1.1100144252060316
+ },
+ "times": {
+  "observation_captured": 337.74267912935466,
+  "observation_delivered_to_controller": 337.74267912935466,
+  "first_brake_application": 338.1426791353151,
+  "onset_measured_decel": 338.1926791360602,
+  "recording_before_cue_s": 10.30000015348196
+ },
+ "contact": {
+  "frames": [
+   8287,
+   8288,
+   8289,
+   8290,
+   8291,
+   8292,
+   8293,
+   8294,
+   8295,
+   8296,
+   8297,
+   8298,
+   8299,
+   8300,
+   8301,
+   8302,
+   8303,
+   8304,
+   8305,
+   8306,
+   8307
+  ],
+  "actors": [
+   "van",
+   "van (footprint overlap)"
+  ]
+ },
+ "evidence_meta": {
+  "frames_contiguous": true,
+  "collision_sensor_ok": true,
+  "video_frames_match": true,
+  "blocked_check": {
+   "ok": true,
+   "ego_width": 2.163450002670288,
+   "van_t": [
+    -0.6975140280814149,
+    1.3938502210808754
+   ],
+   "row_inner_faces": [
+    -2.1922332376798725,
+    2.1231716120422823
+   ],
+   "free_width_each_side": [
+    1.4947192095984576,
+    0.7293213909614069
+   ],
+   "clear_width_measured": 1.4947192095984576,
+   "right_free_width": 0.7293213909614069,
+   "parked_left": 24,
+   "parked_right": 24,
+   "row_max_gap_m": 1.1655653293712902,
+   "row_slot_failures": 2,
+   "row_slot_failure_positions": [
+    [
+     "r",
+     10.3
+    ],
+    [
+     "r",
+     51.2
+    ]
+   ],
+   "pedestrians": 8,
+   "note": "parked cars on both kerbs + van block the street; the only available action is braking in lane"
+  },
+  "van_moved_m": 0.0,
+  "van_max_speed": 0.041872985793123145,
+  "ped_violations": 0
+ },
+ "schema": "rcx-run-1",
+ "scene_seed": 7,
+ "files": [
+  "summary.json",
+  "ego_observable.csv.gz",
+  "ground_truth.csv.gz",
+  "decisions.jsonl.gz"
+ ],
+ "rc_case": "rc01",
+ "variation_id": "v9.5_g9",
+ "candidate_kind": "shared",
+ "family": "two_stage",
+ "scenario_params": {
+  "v_ego": 9.5,
+  "gap": 9.0
+ },
+ "policy_params": {
+  "a0": 0.0,
+  "d0": 0.365863820875553,
+  "a1": 5.97911846818319,
+  "t1": 1.3180948562768222,
+  "a2": 5.492681724246033
+ },
+ "policy_source": {
+  "note": "coverage: RC02"
+ },
+ "surrogate_prediction": {
+  "verdict": "NA",
+  "cls": "NA",
+  "min_front": 0.0,
+  "min_rear": 0.0
+ },
+ "request": "RC02",
+ "contact_detail": {
+  "frame": 8287,
+  "time_s": 338.7926791450009,
+  "t_since_cue_s": 1.0500000156462193,
+  "actor": "van",
+  "source": "footprint",
+  "rel_speed_mps": 5.836782071233554,
+  "normal_impulse_Ns": null,
+  "n_contact_frames": 21
+ },
+ "start_speed": 9.525578612029056,
+ "start_gap": 8.753303002633231,
+ "min_gap": -0.07793840291047616,
+ "stopping_gap": null,
+ "blocked_road_check": {
+  "ok": true,
+  "ego_width": 2.163450002670288,
+  "van_t": [
+   -0.6975140280814149,
+   1.3938502210808754
+  ],
+  "row_inner_faces": [
+   -2.1922332376798725,
+   2.1231716120422823
+  ],
+  "free_width_each_side": [
+   1.4947192095984576,
+   0.7293213909614069
+  ],
+  "clear_width_measured": 1.4947192095984576,
+  "right_free_width": 0.7293213909614069,
+  "parked_left": 24,
+  "parked_right": 24,
+  "row_max_gap_m": 1.1655653293712902,
+  "row_slot_failures": 2,
+  "row_slot_failure_positions": [
+   [
+    "r",
+    10.3
+   ],
+   [
+    "r",
+    51.2
+   ]
+  ],
+  "pedestrians": 8,
+  "note": "parked cars on both kerbs + van block the street; the only available action is braking in lane"
+ },
+ "observation": {
+  "source": "idealized: bumper gap from CARLA footprints; captured when gap <= target, delivered after delay_s",
+  "delay_s": 0.0,
+  "captured_frame": 207,
+  "delivered_frame": 207
+ },
+ "scene_name": "street_van",
+ "hidden_settings": [],
+ "constraints": [
+  {
+   "name": "no_contact",
+   "kind": "contact",
+   "measured": 21.0,
+   "required": 0.0,
+   "op": "==",
+   "unit": "frames",
+   "passed": false
+  },
+  {
+   "name": "in_corridor",
+   "kind": "state",
+   "measured": 0.0,
+   "required": 0.0,
+   "op": "==",
+   "unit": "frames",
+   "passed": true
+  },
+  {
+   "name": "stop_and_hold",
+   "kind": "state",
+   "measured": false,
+   "required": true,
+   "op": "==",
+   "unit": "bool",
+   "passed": false
+  },
+  {
+   "name": "envelope_forward_accel",
+   "kind": "limit",
+   "measured": 0.060797248321934685,
+   "required": 4.905,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": true
+  },
+  {
+   "name": "envelope_braking",
+   "kind": "limit",
+   "measured": 32.39759371038384,
+   "required": 9.81,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": false
+  },
+  {
+   "name": "envelope_lateral_accel",
+   "kind": "limit",
+   "measured": 0.5479356729102467,
+   "required": 9.81,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": true
+  },
+  {
+   "name": "envelope_planar_accel",
+   "kind": "limit",
+   "measured": 32.400201767374334,
+   "required": 9.81,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": false
+  }
+ ],
+ "constraints_pass": false,
+ "first_violated_constraint": {
+  "name": "envelope_planar_accel",
+  "time_s": 328.34267898928374,
+  "t_since_cue_s": null,
+  "dated": true
+ },
+ "scene": {
+  "name": "street_van",
+  "uid": null,
+  "site": null,
+  "split": null,
+  "history_id": "hb3afce11e0",
+  "hidden_world": null,
+  "hidden_params": []
+ },
+ "history_s": 10.3,
+ "short_history": false,
+ "units": {
+  "angle": "deg",
+  "angular_rate": "rad/s",
+  "length": "m",
+  "speed": "m/s",
+  "acceleration": "m/s^2",
+  "time": "s",
+  "frame": "s forward, t positive to the right, yaw positive nose to the right",
+  "sim_time_origin": "CARLA clock",
+  "angle_converted_from_rad": []
+ },
+ "pass_rule_id": "victor-v1",
+ "pass_rule": "all constraints passed; thresholds are the raw limits in `constraints` (clearance 0.5 m, ...)",
+ "unified": "unify-2"
+}
