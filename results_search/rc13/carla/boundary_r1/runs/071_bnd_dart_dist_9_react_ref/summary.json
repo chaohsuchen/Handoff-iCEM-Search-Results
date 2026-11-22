@@ -1,0 +1,288 @@
+{
+ "run_id": "071_bnd_dart_dist_9_react_ref",
+ "rc": "RC13-01",
+ "label": "FAIL",
+ "reason": "[CONTACT] ped_target",
+ "end_reason": "contact",
+ "scenario": {
+  "rc": "RC13-01",
+  "map": "Town03",
+  "road": 3,
+  "lane": -2,
+  "s0": 3.0,
+  "ego_s": 6.0,
+  "v_ego": 8.0,
+  "ped_s": 78.0,
+  "ped_speed": 1.4,
+  "ped_t": 5.85,
+  "preroll_s": 2.5,
+  "duration_s": 11.0,
+  "true_v_ped_max": 1.8,
+  "true_horizon": 2.0,
+  "ego_bp": "vehicle.tesla.model3",
+  "speed_tol": 0.5,
+  "min_speed_ratio": 0.9,
+  "sidewalk": [
+   4.85,
+   6.85
+  ],
+  "lane_half": 1.75,
+  "dart_speed": 3.0,
+  "dart_dist": 9
+ },
+ "policy": {
+  "name": "react_to_motion",
+  "version": "rc13-react-v1",
+  "params": {
+   "v_target": 8.0,
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606,
+   "lane_half": 1.75
+  }
+ },
+ "calibration": {
+  "brake_cmd": [
+   0.0,
+   0.04,
+   0.08,
+   0.12,
+   0.16,
+   0.2,
+   0.3,
+   0.5,
+   0.7
+  ],
+  "brake_decel": [
+   1.9998143110181177,
+   2.390394223347727,
+   2.7596328580413108,
+   3.1133621537648004,
+   3.486676654551118,
+   3.8488713468957276,
+   4.720980942254731,
+   6.408790931254317,
+   7.958614260779554
+  ],
+  "brake_cap": 0.7,
+  "coast_decel": 1.9998143110181177,
+  "brake_delay_s": 0.05,
+  "cruise_throttle": 0.3451889858803437,
+  "max_decel": 7.958614260779554
+ },
+ "metrics": {
+  "first_predicted_lane_overlap_t": null,
+  "first_predicted_ego_conflict_t": 4.750000070780516,
+  "pedestrian_entered_lane": true,
+  "min_lateral_distance_to_ped": 0.03683824815879522,
+  "yield_onset_t": 4.750000070780516,
+  "speed_at_pass": 3.626513171395524,
+  "min_speed": 0.0025065220807291263,
+  "stopped": true,
+  "unnecessary_slowing": false,
+  "min_ped_dist": -0.2543300003145396,
+  "dart": true,
+  "physics_violations": [],
+  "physics_ok": true,
+  "max_filtered_accel": {
+   "forward": 0.03268667605222692,
+   "brake": 9.771596872091724,
+   "lateral": 0.014630988316819329,
+   "planar": 9.771607825557261
+  },
+  "peak_decel_filtered": 9.771596872091724,
+  "peak_fwd_accel_filtered": 0.03268667605222692
+ },
+ "times": {
+  "cue": 351.0305124372244,
+  "first_pred_lane_overlap": null,
+  "yield_onset": 4.750000070780516
+ },
+ "contact": {
+  "frames": [
+   7538,
+   7539,
+   7540,
+   7541,
+   7542,
+   7543,
+   7544,
+   7545,
+   7546,
+   7547,
+   7548,
+   7549,
+   7550,
+   7551,
+   7552,
+   7553,
+   7554,
+   7555,
+   7556,
+   7557,
+   7558
+  ],
+  "actors": [
+   "ped_target"
+  ]
+ },
+ "evidence_meta": {
+  "frames_contiguous": true,
+  "collision_sensor_ok": true,
+  "video_frames_match": true,
+  "ped_violations": 43,
+  "ped_frames_in_lane": 25
+ },
+ "schema": "rcx-run-1",
+ "scene_seed": 7,
+ "files": [
+  "summary.json",
+  "ego_observable.csv.gz",
+  "ground_truth.csv.gz",
+  "decisions.jsonl.gz"
+ ],
+ "rc_case": "rc13",
+ "variation_id": "bnd_dart_dist_9",
+ "candidate_kind": "ref",
+ "family": "react",
+ "scenario_params": {
+  "dart_speed": 3.0,
+  "dart_dist": 9
+ },
+ "policy_params": {
+  "thr": 2.9326130318297188,
+  "a_react": 6.659763139847668,
+  "d_react": 34.150202539661606
+ },
+ "policy_source": {
+  "optimizer": "icem",
+  "pop": 32,
+  "iters": 6,
+  "seed": 0,
+  "robust_cost": null,
+  "warm_start": null
+ },
+ "surrogate_prediction": {
+  "verdict": "FAIL",
+  "cls": "fail",
+  "min_front": -0.01158117298046396,
+  "min_rear": 99.0,
+  "margin": -0.8115811729804641
+ },
+ "scene_name": "sidewalk_pedestrian_dart",
+ "hidden_settings": [
+  "dart_speed",
+  "dart_dist"
+ ],
+ "constraints": [
+  {
+   "name": "no_contact",
+   "kind": "contact",
+   "measured": 21.0,
+   "required": 0.0,
+   "op": "==",
+   "unit": "frames",
+   "passed": false
+  },
+  {
+   "name": "clearance_pedestrian",
+   "kind": "clearance",
+   "measured": -0.2543300003145396,
+   "required": 0.5,
+   "op": ">=",
+   "unit": "m",
+   "passed": false
+  },
+  {
+   "name": "no_unnecessary_slowing",
+   "kind": "state",
+   "measured": false,
+   "required": false,
+   "op": "==",
+   "unit": "bool",
+   "passed": true
+  },
+  {
+   "name": "envelope_forward_accel",
+   "kind": "limit",
+   "measured": 0.03268667605222692,
+   "required": 4.905,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": true
+  },
+  {
+   "name": "envelope_braking",
+   "kind": "limit",
+   "measured": 9.771596872091724,
+   "required": 9.81,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": true
+  },
+  {
+   "name": "envelope_lateral_accel",
+   "kind": "limit",
+   "measured": 0.014630988316819329,
+   "required": 9.81,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": true
+  },
+  {
+   "name": "envelope_planar_accel",
+   "kind": "limit",
+   "measured": 9.771607825557261,
+   "required": 9.81,
+   "op": "<=",
+   "unit": "m/s2",
+   "passed": true
+  }
+ ],
+ "constraints_pass": false,
+ "contact_detail": {
+  "frame": 7538,
+  "time_s": 356.93051252514124,
+  "t_since_cue_s": 5.900000087916851,
+  "actor": "ped_target",
+  "source": "sensor",
+  "rel_speed_mps": 3.0261815496731854,
+  "normal_impulse_Ns": null,
+  "n_contact_frames": 21,
+  "backfilled": true
+ },
+ "first_violated_constraint": {
+  "name": "no_contact",
+  "time_s": 356.93051252514124,
+  "t_since_cue_s": 5.900000087916851,
+  "dated": true
+ },
+ "scene": {
+  "name": "sidewalk_pedestrian_dart",
+  "uid": null,
+  "site": null,
+  "split": null,
+  "history_id": "hc95b691cda",
+  "hidden_world": "{\"dart_dist\": 9, \"dart_speed\": 3.0}",
+  "hidden_params": [
+   "dart_speed",
+   "dart_dist"
+  ]
+ },
+ "history_s": 1.5,
+ "short_history": true,
+ "units": {
+  "angle": "deg",
+  "angular_rate": "rad/s",
+  "length": "m",
+  "speed": "m/s",
+  "acceleration": "m/s^2",
+  "time": "s",
+  "frame": "s forward, t positive to the right, yaw positive nose to the right",
+  "sim_time_origin": "CARLA clock",
+  "angle_converted_from_rad": []
+ },
+ "pass_rule_id": "victor-v1",
+ "pass_rule": "all constraints passed; thresholds are the raw limits in `constraints` (clearance 0.5 m, ...)",
+ "unified": "unify-2"
+}
