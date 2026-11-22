@@ -1,0 +1,339 @@
+{
+ "run_id": "1314_A_s141_0070~hidden1_merge_back_boundary",
+ "rc": "RC14",
+ "label": "FAIL",
+ "reason": "no contact, but min margin r = -0.18 < 0.05 (binding: road)",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC14-S1-opt",
+  "town": "Town06",
+  "site": "A",
+  "frame_site": {
+   "start_xy": [
+    21.7,
+    143.0
+   ],
+   "ref_lane": -5,
+   "ref_idx": 1,
+   "s0": 120.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 10.0,
+  "prefix_s": 4.0,
+  "description": "A stopped car ahead in the ego's lane; the way around it is the left lane, where a van drives just behind the ego. A motorbike seen approaching in the left lane went out of view behind the van moments ago: fast, it will pass the van and arrive in the gap; slow, it stays behind. Change now, brake, or remember the bike and wait for it.",
+  "params": {
+   "v": 20.225367399266283,
+   "d_obs": 80.25112366906373,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -11.546907545763636,
+   "dv_occ": 1.5517096635036634,
+   "bike": 0,
+   "bike_fast": 0,
+   "dv_fast": 13.710349280558493,
+   "dv_slow": 0.8195560802263108,
+   "t_since": 0.7249488598419392,
+   "wx": "heavy"
+  }
+ },
+ "policy": {
+  "name": "options.merge_back",
+  "family": "merge_back",
+  "params": {
+   "a": -4.558404117948896,
+   "g_lead": 3.860043688825096,
+   "g_lag": 5.743934962134286,
+   "A_lat": 6.388014127585663,
+   "y_off": 0.5287201785012674,
+   "b_ev": 5.298432076181786
+  },
+  "t_trigger": -5.842548667089886e-15,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": -0.1790128103975137,
+  "min_margins": {
+   "clear": 0.3873873078293345,
+   "road": -0.1790128103975137,
+   "dyn": 0.19234632944761132
+  },
+  "start_speed": 20.46335994335776,
+  "end_speed": 20.430874828735796,
+  "progress_m": 203.6523646424686,
+  "terminal": 0.07044961975212416,
+  "envelope": {
+   "max_g": 0.34338502625104284,
+   "max_ax_g": 0.180474519990834,
+   "min_ax_g": -0.23380012394265468,
+   "viol_ticks": 0,
+   "shaped_frac": 0.02127659574468085,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "kind": "clearance",
+   "unit": "m",
+   "passed": true,
+   "measured": 0.3873873078293345,
+   "required": 0.05,
+   "op": ">=",
+   "reserve_m": 0.5,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "kind": "clearance",
+   "unit": "m",
+   "passed": false,
+   "measured": -0.1790128103975137,
+   "required": 0.05,
+   "op": ">=",
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "kind": "limit",
+   "unit": "fraction of the budget",
+   "passed": true,
+   "measured": 0.19234632944761132,
+   "required": 0.05,
+   "op": ">=",
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "kind": "clearance",
+   "unit": "m",
+   "passed": true,
+   "measured": 0.07044961975212416,
+   "required": 0.05,
+   "op": ">=",
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "kind": "contact",
+   "unit": "frames",
+   "passed": true,
+   "measured": 0.0,
+   "required": 0.0,
+   "op": "==",
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "kind": "state",
+   "unit": "violations",
+   "passed": true,
+   "measured": 0.0,
+   "required": 0.0,
+   "op": "==",
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "kind": "limit",
+   "unit": "ticks",
+   "passed": true,
+   "measured": 0.0,
+   "required": 0.0,
+   "op": "==",
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "all constraints passed; clearance / road / terminal / friction need a margin of 0.05 above their reserve (clearance reserve 0.5 m, so 0.55 m)",
+ "scene": {
+  "name": "hidden_motorbike",
+  "uid": "A_s141_0070~hidden1",
+  "site": "A",
+  "split": "train",
+  "history_id": "A_s141_0070",
+  "hidden_world": "hidden1",
+  "hidden_params": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 141,
+  "index": 23,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv.gz",
+  "ground_truth.csv.gz",
+  "decisions.jsonl.gz"
+ ],
+ "rc_case": "rc14",
+ "variation_id": "A_s141_0070~hidden1",
+ "candidate_kind": "boundary",
+ "family": "merge_back",
+ "scenario_params": {
+  "v": 20.225367399266283,
+  "d_obs": 80.25112366906373,
+  "stalled_bp": "vehicle.volkswagen.t2_2021",
+  "occ_bp": "vehicle.carlamotors.european_hgv",
+  "occ_dx": -11.546907545763636,
+  "dv_occ": 1.5517096635036634,
+  "bike": 0,
+  "bike_fast": 0,
+  "dv_fast": 13.710349280558493,
+  "dv_slow": 0.8195560802263108,
+  "t_since": 0.7249488598419392,
+  "wx": "heavy"
+ },
+ "hidden_params": [
+  "bike_fast",
+  "dv_fast",
+  "dv_slow"
+ ],
+ "policy_params": {
+  "a": -4.558404117948896,
+  "g_lead": 3.860043688825096,
+  "g_lag": 5.743934962134286,
+  "A_lat": 6.388014127585663,
+  "y_off": 0.5287201785012674,
+  "b_ev": 5.298432076181786
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   141,
+   4290807311,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "boundary",
+  "selected_for": [
+   "complete"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.07123541988356696,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "boundary"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ },
+ "scene_name": "hidden_motorbike",
+ "hidden_settings": [
+  "bike_fast",
+  "dv_fast",
+  "dv_slow"
+ ],
+ "constraints_raw_kent": [
+  {
+   "name": "clearance",
+   "measured": 0.3873873078293345,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": -0.1790128103975137,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.19234632944761132,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.07044961975212416,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "the scene's goal",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "contact_detail": null,
+ "first_violated_constraint": {
+  "name": "road",
+  "time_s": null,
+  "dated": false
+ },
+ "constraints_pass": false,
+ "history_s": 3.95,
+ "short_history": false,
+ "units": {
+  "angle": "deg",
+  "angular_rate": "rad/s",
+  "length": "m",
+  "speed": "m/s",
+  "acceleration": "m/s^2",
+  "time": "s",
+  "frame": "s forward, t positive to the right, yaw positive nose to the right",
+  "sim_time_origin": "0 at the end of the pre-roll",
+  "angle_converted_from_rad": [
+   "ego_yaw_rel",
+   "obs_ego_psi",
+   "obs_La0_psi",
+   "obs_La1_psi",
+   "obs_Lb0_psi",
+   "obs_Ea0_psi",
+   "obs_Ea1_psi",
+   "obs_Eb0_psi",
+   "obs_Ra0_psi",
+   "obs_Ra1_psi",
+   "obs_Rb0_psi",
+   "seen_stalled_yaw_rel",
+   "seen_van_yaw_rel"
+  ]
+ },
+ "pass_rule_id": "kent-v1",
+ "unified": "unify-2"
+}
