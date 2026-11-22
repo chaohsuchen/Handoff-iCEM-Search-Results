@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+logs/
+# CARLA chase-camera videos (about 9.5 GB in total); keep them out of git, share separately if needed
+results_search/**/run.mp4
+slurm
+# private cluster details (paths, node names, partitions): keep local only
+slurm/
+slurm_logs/
+results_free/**/run.mp4
+# never part of a delivery: videos, pickles, scratch and logs (per-tick files are kept, gzipped)
+*.mp4
+*.pkl
+*.tmp
+*.log
+results_search/videos/
