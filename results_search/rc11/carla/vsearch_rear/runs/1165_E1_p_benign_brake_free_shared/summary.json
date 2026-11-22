@@ -1,0 +1,383 @@
+{
+ "run_id": "1165_E1_p_benign_brake_free_shared",
+ "rc": "RC11",
+ "label": "FAIL",
+ "reason": "contact with rear",
+ "end_reason": "contact:rear",
+ "scenario": {
+  "sid": "RC10-S4-opt@E1",
+  "town": "Town06",
+  "site": "E1",
+  "frame_site": {
+   "start_xy": [
+    20.0,
+    45.4
+   ],
+   "ref_lane": -4,
+   "ref_idx": 1,
+   "s0": 150.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 8.0,
+  "prefix_s": 3.0,
+  "description": "The car ahead blows a tyre, skids along the ego's lane, then slides across into the left or the right lane; which one shows only t_reveal s after it loses control. Brake in lane, commit early to a side, or brake and escape to the side it is not sliding to once that is seen; a heavy vehicle close behind cannot follow a hard stop.",
+  "params": {
+   "spin": 0,
+   "slide_dir": 1,
+   "t_reveal": 1.3,
+   "v": 24.0,
+   "headway": 0.6,
+   "b_spin": 10.0,
+   "slide": 2.3,
+   "benign_dec": 4.0,
+   "adjL": 0,
+   "adjL_dx": 0.0,
+   "adjR": 0,
+   "adjR_dx": 0.0,
+   "rear": 1,
+   "rear_bp": "vehicle.mercedes.sprinter",
+   "rear_gap": 9.0,
+   "rear_react": 1.0,
+   "rear_b": 4.0,
+   "wx": "dry"
+  }
+ },
+ "policy": {
+  "name": "options.brake_free",
+  "family": "brake_free",
+  "params": {
+   "b_frac": 0.6,
+   "d_seen": 0.1,
+   "A_lat": 4.5,
+   "b_evasive": 2.0,
+   "y_off": 0.3
+  },
+  "t_trigger": 0.09999999999999772,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": -2.56352956611538,
+  "min_margins": {
+   "clear": -2.56352956611538,
+   "road": 3.7186173371857176,
+   "dyn": 0.5372718594516714
+  },
+  "start_speed": 24.220217796151776,
+  "end_speed": 6.408322865347732,
+  "progress_m": 68.1839858860583,
+  "terminal": null,
+  "envelope": {
+   "max_g": 0.7080726149924291,
+   "max_ax_g": 0.050098947374990356,
+   "min_ax_g": -0.708072614991879,
+   "viol_ticks": 0,
+   "shaped_frac": 0.014084507042253521,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [
+   59022256
+  ],
+  "actors": [
+   "rear"
+  ],
+  "impact_speed": 7.41510704478907
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "kind": "clearance",
+   "unit": "m",
+   "passed": false,
+   "measured": -2.56352956611538,
+   "required": 0.05,
+   "op": ">=",
+   "reserve_m": 0.5,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "kind": "clearance",
+   "unit": "m",
+   "passed": true,
+   "measured": 3.7186173371857176,
+   "required": 0.05,
+   "op": ">=",
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "kind": "limit",
+   "unit": "fraction of the budget",
+   "passed": true,
+   "measured": 0.5372718594516714,
+   "required": 0.05,
+   "op": ">=",
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "kind": "clearance",
+   "unit": "m",
+   "passed": false,
+   "measured": null,
+   "required": 0.05,
+   "op": ">=",
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "kind": "contact",
+   "unit": "frames",
+   "passed": false,
+   "measured": 1.0,
+   "required": 0.0,
+   "op": "==",
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "kind": "state",
+   "unit": "violations",
+   "passed": false,
+   "measured": 1.0,
+   "required": 0.0,
+   "op": "==",
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "kind": "limit",
+   "unit": "ticks",
+   "passed": true,
+   "measured": 0.0,
+   "required": 0.0,
+   "op": "==",
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "all constraints passed; clearance / road / terminal / friction need a margin of 0.05 above their reserve (clearance reserve 0.5 m, so 0.55 m)",
+ "scene": {
+  "name": "spinning_lead",
+  "uid": "E1_p_benign",
+  "site": "E1",
+  "split": "heldout",
+  "history_id": "E1_p_benign",
+  "hidden_world": null,
+  "hidden_params": [
+   "spin",
+   "slide_dir",
+   "t_reveal",
+   "b_spin",
+   "rear_react",
+   "rear_b"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 73,
+  "index": 0,
+  "how": "preset:benign"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv.gz",
+  "ground_truth.csv.gz",
+  "decisions.jsonl.gz"
+ ],
+ "rc_case": "rc11",
+ "variation_id": "E1_p_benign",
+ "candidate_kind": "shared",
+ "family": "brake_free",
+ "scenario_params": {
+  "spin": 0,
+  "slide_dir": 1,
+  "t_reveal": 1.3,
+  "v": 24.0,
+  "headway": 0.6,
+  "b_spin": 10.0,
+  "slide": 2.3,
+  "benign_dec": 4.0,
+  "adjL": 0,
+  "adjL_dx": 0.0,
+  "adjR": 0,
+  "adjR_dx": 0.0,
+  "rear": 1,
+  "rear_bp": "vehicle.mercedes.sprinter",
+  "rear_gap": 9.0,
+  "rear_react": 1.0,
+  "rear_b": 4.0,
+  "wx": "dry"
+ },
+ "hidden_params": [
+  "spin",
+  "slide_dir",
+  "t_reveal",
+  "b_spin",
+  "rear_react",
+  "rear_b"
+ ],
+ "policy_params": {
+  "b_frac": 0.6,
+  "d_seen": 0.1,
+  "A_lat": 4.5,
+  "b_evasive": 2.0,
+  "y_off": 0.3
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   73,
+   2536045794,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "shared",
+  "selected_for": [
+   "shared"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "FAIL",
+  "nominal": "FAIL",
+  "r": -2.6807734420676574,
+  "r_worst": -2.8869005632852027,
+  "n_pass": 0,
+  "n_worlds": 15,
+  "fail": "contact:rear",
+  "near": "rear",
+  "contact": "rear",
+  "impact_speed": 7.295957030658945,
+  "margins": {
+   "clear": -2.6807734420676574,
+   "road": 4.2,
+   "dyn": 0.537210655554861
+  },
+  "cls": "fail",
+  "robust_cost": 1364.7978515329473
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ },
+ "scene_name": "spinning_lead",
+ "hidden_settings": [
+  "spin",
+  "slide_dir",
+  "t_reveal",
+  "b_spin",
+  "rear_react",
+  "rear_b"
+ ],
+ "constraints_raw_kent": [
+  {
+   "name": "clearance",
+   "measured": -2.56352956611538,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 3.7186173371857176,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.5372718594516714,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": null,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": "rear",
+    "impact_speed": 7.41510704478907
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": false,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "inside the corridor, lane-centred at the horizon",
+   "passed": false,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "contact_detail": {
+  "frame": 59022256,
+  "time_s": 4.0,
+  "t_since_cue_s": 3.9,
+  "actor": "rear",
+  "source": "footprint/sensor",
+  "rel_speed_mps": 7.41510704478907,
+  "normal_impulse_Ns": null,
+  "n_contact_frames": 1,
+  "backfilled": true
+ },
+ "first_violated_constraint": {
+  "name": "no_contact",
+  "time_s": 4.0,
+  "dated": true,
+  "t_since_cue_s": 3.9
+ },
+ "constraints_pass": false,
+ "history_s": 3.05,
+ "short_history": false,
+ "units": {
+  "angle": "deg",
+  "angular_rate": "rad/s",
+  "length": "m",
+  "speed": "m/s",
+  "acceleration": "m/s^2",
+  "time": "s",
+  "frame": "s forward, t positive to the right, yaw positive nose to the right",
+  "sim_time_origin": "0 at the end of the pre-roll",
+  "angle_converted_from_rad": [
+   "ego_yaw_rel",
+   "obs_ego_psi",
+   "obs_La0_psi",
+   "obs_La1_psi",
+   "obs_Lb0_psi",
+   "obs_Ea0_psi",
+   "obs_Ea1_psi",
+   "obs_Eb0_psi",
+   "obs_Ra0_psi",
+   "obs_Ra1_psi",
+   "obs_Rb0_psi",
+   "seen_spin_car_yaw_rel",
+   "seen_rear_yaw_rel"
+  ]
+ },
+ "pass_rule_id": "kent-v1",
+ "unified": "unify-2"
+}
